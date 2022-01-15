@@ -1,0 +1,17 @@
+Be aware this is a development version; though it generally works fine, you may experience some troubles, in which case please tell it to the developers.
+
+New feature/update in this release: (0.2.0)
+- Finished undo/redo ( At least for me it's OK now )
+- Ability to open dragged files from gtk apps (Nautilus)
+- Ability to open multiple files
+- Doc scanner ("Digest")
+- Usability changes:
+  * Changed menus and toolbars to match the HIG.
+  * Added icons to menus.
+  * If current doc is empty and unnamed, it's used.
+  * Added secondary toolbar.
+  * Toolbars can be hidden now (it's in the HIG).
+  * Temporary bookmarks to ease navigation through the document
+- New dialogs
+  * box wizard
+

@@ -1,0 +1,97 @@
+cssed (c) iago Rubio, 2003-2005
+
+README FILE
+-----------
+
+
+Thanks for trying cssed.
+
+Please read http://cssed.sourceforge.net before installing this application and 
+read the INSTALL file for installation instructions.
+
+If you feel lazy to do that, just type from the root directory of this 
+distribution:
+
+$ ./configure
+
+If you're using Linux, and configure fails for some reason involving 
+Makefile.in files try to run.
+
+$ ./bootstrap
+$ ./configure
+
+Then you can run:
+
+$ make
+
+To get cssed installed in your system use the command:
+
+$ make --install
+
+All your feedback and help will be welcomed.
+
+UPDATING FROM CVS
+-----------------
+
+When you update this project - and any other - from cvs, and the build scripts
+for the projects have changed, you must rebuild them.
+
+To acomplish this task, you've got two script with this distribution:
+
+* autogen.sh - rebuild all scripts even if it's not needed. 
+* bootstrap - try to rebuild the missing files and change just the required
+scripts (MacOsX users: don't use it).
+
+Both put the source tree in a state where you must use the above instructions
+to build and install the updated package.
+
+
+BUILDING ON Mac OS X
+------------------
+
+To compile it on Mac OS X, you need:
+
+* a Fink installation using the 10.3 or 10.4 unstable tree
+* Apple's X11 and X11SDK installed.
+
+To enable Fink's unstable tree:
+Open a terminal and type:
+
+$ sudo pico /sw/etc/fink.conf + return
+
+Enter your password when asking for.
+Change the Trees lines as follows:
+Trees: local/main stable/main unstable/main stable/crypto unstable/crypto local/bootstrap
+
+Be aware it should be one and unique line
+Save the result as follows:
+
+ctrl-O +return
+ctrl-X
+
+Update your Fink installation with:
+
+fink selfupdate + return
+
+Install cssed:
+
+fink install cssed + return
+
+
+Thanks to Michele Garoche http://micmacfr.homeunix.org for share with
+us hardware resources and knowledge.
+
+
+LICENSE
+--------
+
+This software is Open Software and It's released under GPL.
+
+Read the file COPYING for details.
+
+
+- Iago Rubio -
+
+iago.rubio (at) hispalinux.es
+http://cssed.sourceforge.net
+http://sourceforge.net/projects/cssed

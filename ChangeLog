@@ -1,0 +1,667 @@
+2007-01-02  michga  <michga@users.sourceforge.net>
+
+	* README: Updated instructions for Mac OS X.
+
+	* configure.in, Makefile.am: 
+	Changed detection of Mac OS X OS type.
+	Added flag to disable update databases,
+	 so that the desktop database could be updated in post-install script.
+	 Added cssed.mime in dist-hook, so that it exists in
+	the tarball generated with make dist-gzip.
+
+	* freedesktop/cssed.desktop.in: Added French name and comment.
+
+	* src/interface.c: Fixed code for translation of Unsplit and Vertically
+	in splitter window (same as Horizontally).
+
+	* po/cssed.pot, ca.po, cs.po, de.po, es.po, fr.po, gl.po, it.po:
+	Regenerated pot file to take into account changes in src/interface.c.
+	Updated po files accordingly.
+	There remain fuzzy strings in po files, except fr.po.
+   
+2006-11-28  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* scintilla/src/LexHTML.cxx: Fixed minor bug reported on scintilla's list.
+
+	* 	src/filetype-cssed2., src/interface.c, src/document-list.c, src/document.h, src/utils.c, src/plugin.h, srd/selectorparser.c, src/sciwrappers.h, src/document.c, src/sciwrappers.c, src/cssdialogs-callbacks.c,	src/configdlg-interface.c, src/cssedwindow.c, src/cssedwindow.h, src/configdlg-callbacks.c, src/configdlg-callbacks.h, src/configparser.c,	src/callbacks.c: 
+	Added support for tabs or spaces, and the amount of characters on each.
+	Various minor bug fixes.
+	Deleted outdated comment.
+
+2006-08-13  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* configure.in: Deleted outdated comment.
+
+2006-07-17  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* freedesktop/cssed.desktop.in: Deleting bogus mime types.
+
+2006-07-04  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* Makefile.am, Makefile.in, aclocal.m4, configure, configure.in:
+	Updated build scripts and autotools files to match current code layout.
+
+2006-07-04  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* include/plugin.h: Minor update to doc comment.
+
+	* libcroco/Makefile.in, libcroco/parser/Makefile.in, pixmaps/Makefile.in:
+	Updated build scripts and autotools files to match current code layout.
+
+	* po/ca.po, po/cs.po, po/cssed.pot, po/de.po, po/es.po, po/fr.po, po/gl.po, po/it.po:
+	Updating incomplete translation files.
+
+	* redhat/cssed.spec: Changed icon name.
+
+	* scintilla/License.txt, scintilla/Makefile.in, scintilla/README, scintilla/gtk/Converter.h, scintilla/gtk/Makefile.am, scintilla/gtk/Makefile.in, scintilla/gtk/PlatGTK.cxx, scintilla/gtk/ScintillaGTK.cxx, scintilla/gtk/scintilla-marshal.c, scintilla/gtk/scintilla-marshal.h, scintilla/include/HFacer.py, scintilla/include/KeyWords.h, scintilla/include/Platform.h, scintilla/include/SciLexer.h, scintilla/include/Scintilla.h, scintilla/include/Scintilla.iface, scintilla/include/ScintillaWidget.h, scintilla/src/CallTip.cxx, scintilla/src/CallTip.h, scintilla/src/CellBuffer.cxx, scintilla/src/CellBuffer.h, scintilla/src/CharClassify.cxx, scintilla/src/CharClassify.h, scintilla/src/ContractionState.cxx, scintilla/src/Document.cxx, scintilla/src/Document.h, scintilla/src/DocumentAccessor.cxx, scintilla/src/Editor.cxx, scintilla/src/Editor.h, scintilla/src/ExternalLexer.cxx, scintilla/src/Indicator.cxx, scintilla/src/KeyMap.cxx, scintilla/src/KeyWords.cxx, scintilla/src/LexAU3.cxx, scintilla/src/LexBash.cxx, scintilla/src/LexBasic.cxx, scintilla/src/LexCPP.cxx, scintilla/src/LexCSS.cxx, scintilla/src/LexCaml.cxx, scintilla/src/LexEiffel.cxx, scintilla/src/LexGen.py, scintilla/src/LexGui4Cli.cxx, scintilla/src/LexHTML.cxx, scintilla/src/LexInno.cxx, scintilla/src/LexLua.cxx, scintilla/src/LexMSSQL.cxx, scintilla/src/LexOpal.cxx, scintilla/src/LexOthers.cxx, scintilla/src/LexPython.cxx, scintilla/src/LexRuby.cxx, scintilla/src/LexSQL.cxx, scintilla/src/LexSpice.cxx, scintilla/src/LexTCL.cxx, scintilla/src/LineMarker.h, scintilla/src/RESearch.cxx, scintilla/src/RESearch.h, scintilla/src/ScintillaBase.cxx, scintilla/src/StyleContext.h, scintilla/src/ViewStyle.cxx, scintilla/src/ViewStyle.h, scintilla/version.txt:
+	Updated scintilla to version 1.70
+
+	* src/Makefile.in:
+	Updated build scripts and autotools files to match current code layout.
+
+2006-07-04  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/interface.c:
+	Added copy to scratch and paste from scratch functionality.
+
+	* src/plugin.c: Fixed bug in cssed_window_output_write
+
+	* src/utils.c: Minor update to confussing comment.
+
+2006-07-04  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/callbacks.c, src/callbacks.h:
+	Added copy to scratch and paste from scratch functions, minor changes to output list management.
+
+	* src/cssdialogs-functions.c:
+	Fixed bug reported by Anthony in private mail, that fixes a segfault on the padding dialog, when using padding-left.
+
+	* src/cssedwindow.c, src/cssedwindow.h:
+	Added copy to scratch and paste from scratch functions.t.
+
+	* src/document.c, src/document.h:
+	Minor cosmetics in the notebook tabs' menu.
+
+	* src/filetype-sql.c: Updated to use scintilla version 1.70
+
+2006-03-11  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/interface.c: Fixed minor typos.
+
+	* src/callbacks.c:
+	Changed Selector Wizard to output from all pages instead of  from the current page.
+
+	* ChangeLog: Updated ChangeLog from cvs
+
+2006-03-10  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* ChangeLog: Updated ChangeLog from cvs
+
+	* configure: Updated autotools files.
+
+	* po/de.po, po/es.po, po/fr.po, po/gl.po, po/it.po, po/ca.po, po/cs.po, po/cssed.pot:
+	Updated language files.
+
+	* redhat/cssed.spec: Fixed mime types.
+
+	* src/callbacks.c: Fixed initiall focus on goto-line-dialog
+
+	* src/gotoline-dialog.c: Fixed initiall focus.
+
+	* src/Makefile.am, src/Makefile.in, src/utils.c, src/callbacks.h, src/cssedwindow.c, src/cssedwindow.h, src/interface.c, src/callbacks.c:
+	Added support for multiple views of a given document - splitter windows.
+
+	* src/floating-list.c:
+	Minor changes and improved focus on floating list.
+
+	* src/document.c, src/document.h, src/filetype-c.c, src/filetype-css2.c, src/filetype-diff.c, src/filetype-hypertext.c, src/filetype-java.c, src/filetype-js.c, src/filetype-make.c, src/filetype-perl.c, src/filetype-phpscript.c, src/filetype-python.c, src/filetype-sh.c, src/filetype-sql.c, src/filetype-text.c, src/filetype-xml.c, src/filetypes.h:
+	Changed file type set_style() hook to support sppliter windows
+
+	* src/filetype-conf.c, src/filetype-conf.h:
+	Added again Apache Conf file type.
+
+	* src/configdlg-callbacks.c:
+	Freed really tiny leak with Pango font description.
+
+2006-01-23  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* libcroco/Makefile.in, libcroco/parser/Makefile.in, pixmaps/Makefile.in, scintilla/Makefile.in, scintilla/gtk/Makefile.in, src/Makefile.in:
+	Updated auto-generated build scripts.
+
+	* redhat/cssed.spec: Added mime type to *.desktop file.
+
+	* Makefile.am, Makefile.in, configure, configure.in:
+	Added freedesktop.org support. Adds a desktop icon and mime info.
+
+	* freedesktop/cssed.applications.in, freedesktop/cssed.desktop.in, freedesktop/cssed.mime:
+	Added freedesktop.org support. Adds desktop icon and mime info.
+
+	* Makefile.am, Makefile.in, aclocal.m4, configure, configure.in:
+	Changed build files to fit with the new directory layout. Now the images are not installed anymore.
+
+	* redhat/cssed.spec:
+	Changed spec file to fit with the new directory layout. Now the images are not installed anymore.
+
+	* include/plugin.h, include/ScintillaWidget.h, include/cssdialogs-class.h, include/cssedwindow.h, include/document.h:
+	Deleted old plugin API files. Those won't be used directly anymore, any addition to the plugins API to support internal objects, will be done through the plugin.h file.
+
+	* libcroco/Makefile.in, libcroco/parser/Makefile.in, scintilla/Makefile.in, scintilla/gtk/Makefile.in:
+	Updated autotools files.
+
+	* pixmaps/Makefile.am, pixmaps/Makefile.in, pixmaps/cssed_about.png, pixmaps/cssed_icon.png, pixmaps/images.h:
+	Various changes to use internally compiled images, instead of runtime loaded images. With this we don't need to install the images on the target host, but it will require to recompile to change the images.
+
+	* pixmaps/cssed-about.png, pixmaps/cssed-icon.png:
+	Deleted old files with names not compatible with C variables.
+
+	* src/Makefile.in, src/cssedwindow.c, src/document.c, src/interface.c, src/main.c, src/support.c, src/support.h:
+	Various changes to use internally compiled images, instead of runtime loaded images. With this we don't need to install the images on the target host, but it will require to recompile to change the images.
+
+2006-01-22  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/configparser.c, src/cssdialogs-interface.c, src/cssedwindow.c, src/cssparser.c, src/doc-scanner.c, src/document-list.c, src/document.c, src/filetype-phpscript.c, src/plugin.c, src/selector-wizard.c, src/xmlparser.c:
+	Fixed various compiler warnings. Fixes #1387288
+
+	* libcroco/parser/cr-sel-eng.c, libcroco/parser/cr-simple-sel.c, libcroco/parser/cr-statement.c, libcroco/parser/cr-style.c, libcroco/parser/cr-term.c, libcroco/parser/cr-tknzr.c, libcroco/parser/cr-additional-sel.c, libcroco/parser/cr-attr-sel.c, libcroco/parser/cr-declaration.c, libcroco/parser/cr-enc-handler.c, libcroco/parser/cr-fonts.c, libcroco/parser/cr-input.c, libcroco/parser/cr-num.c, libcroco/parser/cr-parser.c, libcroco/parser/cr-pseudo.c, libcroco/parser/cr-rgb.c, libcroco/parser/cr-selector.c:
+	Fixed various compiler warnings. May be we should step up and build a smaller parser for the validator. Fixes #1387288
+
+2005-12-24  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/main.c: Fixed bug in msg queue.
+
+	* redhat/cssed.spec: Fixed bogus requires.
+
+	* src/cssedwindow.c:
+	Minor cleanup of comments about the - yet fixed -paned bug.
+
+	* src/cssdialogs-callbacks.c, src/cssdialogs-callbacks.h, src/cssdialogs-interface.c:
+	Various usability fixes on css dialogs
+
+2005-12-22  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/configparser.c: Fixed memory leak induced by the fix to  #1387292
+
+	* src/callbacks.c: Changed urls with new site's ones  #1387294
+
+	* po/gl.po, po/it.po, po/ca.po, po/de.po:
+	Bumped version on unmaintained languages #1387347
+
+	* src/utils.c: Added browser command for OsX systems #1387292
+
+	* src/callbacks.c: Fixed minor typo #1387350
+
+2005-12-21  michga  <michga@users.sourceforge.net>
+
+	* po/ChangeLog, po/cssed.pot, po/fr.po: Updating french po file
+
+2005-12-04  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/filetype-css2.c: Fixed pseudo tag "focus" recongnition #1372703
+
+	* po/es.po: Updated spanish language file.
+
+	* redhat/cssed.spec, Makefile.am, Makefile.in, configure.in, cssed.pc.in, configure:
+	Made changes to install development headers in includedir.
+
+2005-11-27  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* ChangeLog: Updated ChangeLog from cvs.
+
+	* configure.in, configure: Updated build files to add Czech language.
+
+	* po/fr.po, po/gl.po, po/it.po, po/de.po, po/es.po, po/cssed.pot, po/ca.po:
+	Updated language files.
+
+	* po/cs.po:
+	Added new language Czech, thanks to Zbynek Mrkvicka for this translation.
+
+	* src/doc-scanner.c:
+	Finally, reverted to old version to fix regression as it has been commited and old revision by mistake.
+
+	* src/cssdialogs-menu.c, src/box-wizard.c:
+	Deleted unneeded gettext macros.
+
+	* src/cssdialogs-interface.c:
+	Fixed typos caused by taking out the gettext translatable macro _() from some strings, the script took out the quotes as well _("").
+
+	* src/doc-scanner.c:
+	Reverted to old version to fix regression as it has been commited and old revision by mistake.
+
+2005-11-21  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/cssdialogs-callbacks.c, src/doc-scanner.c, src/document-list.c, src/document.c, src/plugin.c, src/sciwrappers.c, src/utils.c, src/utils.h:
+	Fixed problems with encoding, and escaped uris o win32.
+
+2005-11-19  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/doc-scanner.c:
+	Regresion fixed. The code to split selectors grouped on the document scanner got lost. Added again.
+
+2005-11-18  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* po/fr.po, po/gl.po, po/it.po, po/ca.po, po/cssed.pot, po/de.po, po/es.po:
+	Updated language files.
+
+	* include/cssdialogs-class.h, include/cssedwindow.h, include/document.h, include/plugin.h:
+	Updated include files, even while some of them won't be used with current plugin API. WIll be used on next release.
+
+2005-11-13  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/plugin.c, src/plugin.h:
+	Changed error_message and output_write functions to allow printf format with variable arguments.
+
+	* src/utils.c, src/cssdialogs-class.h, src/cssdialogs-callbacks.c:
+	Minor cosmetics.
+
+	* src/interface.c: Wraped text in error dialog.
+
+	* src/cssedwindow.c:
+	Worked around non working cssed_windows_ensure_output_visible
+
+	* src/document.c, src/document.h:
+	Added document_send_sicintilla_messagr required by plugins
+
+2005-11-01  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* configure.in: Deleted old comment (cosmetics)
+
+	* ChangeLog: Fixed b0rked Changelog
+
+	* po/POTFILES.in, po/de.po, po/es.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot, po/ca.po:
+	Updated language files.
+
+	* include/SciLexer.h, include/Scintilla.h, include/ScintillaWidget.h, include/cssedwindow.h, include/document.h, include/plugin.h:
+	Cahnged plugin interface. Most files here will be deprecated shortly.
+
+	* scintilla/src/LexSQL.cxx, scintilla/include/SciLexer.h:
+	Changes on SQL lexer. Those changes have been aproved and are right now, on scintilla's cvs.
+
+	* scintilla/gtk/Makefile.am, scintilla/gtk/Makefile.in:
+	Updated auto-generated build scripts.
+
+	* src/callbacks.c, src/callbacks.h, src/cssedwindow.c, src/cssedwindow.h, src/cssparser.c, src/doc-scanner.c, src/document-list.c, src/document.c, src/document.h, src/file-type-manager.c, src/file-type-manager.h, src/filetype-c.c, src/filetype-css2.c, src/filetype-hypertext.c, src/filetype-phpscript.c, src/filetype-sql.c, src/interface.c, src/main.c, src/plugin.c, src/plugin.h, src/plugins-dialog.c, src/sciwrappers.c, src/sciwrappers.h, src/selector-wizard.c, src/selectorparser.c, src/utils.c:
+	Mass update, with various Win32 related fixes.
+
+2005-09-28  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/cssdialogs-callbacks.c:
+	Minimall format changes. Commint just to maintain cvs in  sync with incoming release.
+
+	* ChangeLog: Updated Changelog from CVS.
+
+	* src/utils.c:
+	Fixed eol recognition functions to allow 0 bytes buffers, and to use sanest defaults on Win32.
+
+	* src/document.c:
+	Changes on document_open, document_add_file caused by a change of behaviour of mmap refusing to map 0 bytes files. In the other hand the code is sanest this way.
+
+	* configure, configure.in, scintilla/gtk/Makefile.am, scintilla/gtk/Makefile.in, scintilla/gtk/scintilla-marshal.c, scintilla/gtk/scintilla-marshal.h, src/Makefile.am, src/Makefile.in:
+	Added changes to build scripts submited by Yaakov Selkowitz to fix #1305356. This allows cssed to be bulid on Cygwin/X11 and other environments where srcdir != builddir.
+
+2005-09-28  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/utils.c:
+	Fixed eol recognition functions to allow 0 bytes buffers, and to use sanest 
+	defaults on Win32.
+
+	* src/document.c:
+	Changes on document_open, document_add_file caused by a change of behaviour
+	 of mmap refusing to map 0 bytes files. In the other hand the code is sanest
+	 this way.
+
+	* configure, configure.in, scintilla/gtk/Makefile.am, scintilla/gtk/Makefile.in,
+	 scintilla/gtk/scintilla-marshal.c, scintilla/gtk/scintilla-marshal.h,
+	 src/Makefile.am, src/Makefile.in:
+	 Added changes to build scripts submited by Yaakov Selkowitz to fix #1305356.
+	 This allows cssed to be bulid on Cygwin/X11 and other environments where srcdir != builddir.
+
+2005-09-27  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/cssedwindow.c, src/document.c, src/filetype-css2.c, src/main.c:
+	Temporary fixed the paned bug, using an idle call.
+	 It seems that there were events pending on size change, and the sizes got messed.
+
+	* po/cssed.pot, po/de.po, po/es.po, po/fr.po, po/gl.po, po/it.po, po/ca.po:
+	Updated language files.
+
+	* src/filetype-css2.c:
+	Added small delay to auto-completion to override it if the user continues typing.
+
+	* src/configparser.c:
+	Minimall format changes. Commint just to maintain cvs in  sync with incoming release.
+
+	* src/callbacks.h, src/callbacks.c:
+	On "Revert to Saved" now the document is not closed, but its contents are changed instead.
+
+	* src/document-list.c: Fixed minimall leak when GError was set.
+
+	* src/utils.c: Changed defaults for more sane ones.
+
+	* src/selectorparser.c: Deleted outdated comments.
+
+	* src/plugins-dialog.c: Fixed minimall leak when GError was set.
+
+	* src/main.c: Worked around the paned bug, but not yet fixed.
+
+	* src/interface.c: Minimall format changes. No code change right now.
+
+	* src/filetype-python.c:
+	Added auto-indent test code. Mostly if you adds an EOL it'll indent as last line.
+
+	* src/cssedwindow.c: Worked around the paned bug, but not yet fixed.
+
+	* src/document.c, src/document.h:
+	Changed sizes to let it fit in 800x600. I'm sorry I always ended in the same 
+	issue, but I'm on 1600x1200. Added document_add_file func.
+
+2005-09-19  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* configure, configure.in:
+	Fixed spec file to push a new version and build scripts as well.
+
+	* po/es.po: Updated language files.
+
+	* redhat/cssed.spec, scintilla/gtk/Converter.h, scintilla/include/ScintillaWidget.h, 
+	scintilla/src/ContractionState.h, scintilla/src/DocumentAccessor.cxx, 
+	scintilla/src/DocumentAccessor.h, scintilla/src/KeyMap.h, scintilla/src/LexBaan.cxx,
+	 scintilla/src/LexBullant.cxx, scintilla/src/LexConf.cxx, scintilla/src/LexCrontab.cxx, 
+	scintilla/src/LexEiffel.cxx, scintilla/src/LexErlang.cxx, scintilla/src/LexFortran.cxx, 
+	scintilla/src/LexGui4Cli.cxx, scintilla/src/LexKix.cxx, scintilla/src/LexMatlab.cxx, 
+	scintilla/src/LexPS.cxx, scintilla/src/LexSpecman.cxx, scintilla/src/LexTeX.cxx, 
+	scintilla/src/LexVerilog.cxx, scintilla/src/LineMarker.h, scintilla/src/SVector.h,
+	 scintilla/src/SciTE.properties, scintilla/src/StyleContext.h, 
+	scintilla/src/UniConversion.h, src/Makefile.am, src/Makefile.in:
+	Fixed spec file to push a new version and build scripts as well.
+
+	* src/filetype-python.c:
+	Added tab guides as tabs matters in python, this should be a global setting on next release.
+
+2005-09-18  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* po/gl.po, po/it.po, po/cssed.pot, po/de.po, po/es.po, po/fr.po, po/ca.po:
+	Updated language files.
+
+	* redhat/cssed.spec: Updated versions in spec file.
+
+	* src/document.c: Fixed small bug in calltip functions.
+
+2005-09-16  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* po/es.po: Updated spanish language file.
+
+	* src/Makefile.am, src/Makefile.in, src/file-type-manager.c, 
+	src/file-type-manager.h, src/filetype-c.c, src/filetype-css2.c, 
+	src/filetype-diff.c, src/filetype-hypertext.c, src/filetype-make.c,
+	src/filetype-perl.c, src/filetype-phpscript.c, src/filetype-python.c, 
+	src/filetype-sh.c, src/filetype-sql.c, src/filetype-text.c, src/filetype-xml.c, 
+	src/filetypes.h, src/floating-list.c, src/interface.c, src/sciwrappers.c, 
+	src/sciwrappers.h, src/selectorparser.c, src/support.h, src/utils.c, 
+	src/utils.h:
+	Added "default browser" support and configuration setup. Improved configuration 
+	file now also saves application's state (maximized|minimized). 
+	Improved some file type managers.
+
+	* src/configdlg-interface.c, src/configparser.c, src/cssdialogs-callbacks.c, 
+	src/cssdialogs-functions.c, src/cssedwindow.c, src/cssedwindow.h, src/document.c, 
+	src/document.h:
+	Added "default browser" support and configuration setup. Improved configuration 
+	file now also saves application's state (maximized|minimized).
+
+	* src/configdlg-callbacks.c, src/configdlg-callbacks.h:
+	Fixed bug #1292993
+
+	* src/plugin.h: Added call tip support to plugable interface.
+
+	* src/plugin.c, src/box-wizard.c, src/color-wizard.c:
+	Fixed bug #1292993
+
+	* src/callbacks.h, src/callbacks.c:
+	Fixed regex replace. Added view help in default browser.
+
+	* src/main.c: Minimal changes in included headers for Win32 version.
+
+	* src/xpm-icons.h:
+	Added better looking icons for bookmarks and markers.
+
+	* src/filetype-java.c, src/filetype-java.h, src/filetype-js.c, src/filetype-js.h:
+	Added java and javascript highlighting
+
+	* include/plugin.h: Added call tip support to plugable interface.
+
+	* scintilla/version.txt, scintilla/gtk/Makefile.am, scintilla/gtk/Makefile.in, 
+	scintilla/gtk/PlatGTK.cxx, scintilla/gtk/ScintillaGTK.cxx, scintilla/include/KeyWords.h, 
+	scintilla/include/Platform.h, scintilla/include/PropSet.h, scintilla/include/SString.h, 
+	scintilla/include/SciLexer.h, scintilla/include/Scintilla.h, scintilla/include/Scintilla.iface, 
+	scintilla/src/LexCSS.cxx, scintilla/src/LexLisp.cxx, scintilla/src/LexLua.cxx, 
+	scintilla/src/LexMSSQL.cxx, scintilla/src/LexNsis.cxx, scintilla/src/LexOthers.cxx, 
+	scintilla/src/LexPOV.cxx, scintilla/src/LexPerl.cxx, scintilla/src/LexPython.cxx, 
+	scintilla/src/LexRuby.cxx, scintilla/src/LexSQL.cxx, scintilla/src/AutoComplete.cxx, scintilla/src/AutoComplete.h, scintilla/src/CallTip.cxx, scintilla/src/CallTip.h, scintilla/src/CellBuffer.cxx, scintilla/src/Document.cxx, scintilla/src/Document.h, scintilla/src/Editor.cxx, scintilla/src/Editor.h, scintilla/src/KeyWords.cxx, scintilla/src/LexAU3.cxx, scintilla/src/LexAVE.cxx, scintilla/src/LexBash.cxx, scintilla/src/LexBasic.cxx, scintilla/src/LexCLW.cxx, scintilla/src/LexCPP.cxx, scintilla/src/LexCaml.cxx, scintilla/src/LexGen.py, scintilla/src/LexHTML.cxx, scintilla/src/LexVB.cxx, scintilla/src/LineMarker.cxx, scintilla/src/PropSet.cxx, scintilla/src/RESearch.h, scintilla/src/ScintillaBase.cxx, scintilla/src/ScintillaBase.h, scintilla/src/XPM.cxx:
+	Updated scintilla to 1.66
+
+	* scintilla/src/LexCsound.cxx, scintilla/src/LexFlagship.cxx, scintilla/src/LexHaskell.cxx, scintilla/src/LexRebol.cxx, scintilla/src/LexSmalltalk.cxx, scintilla/src/LexTADS3.cxx:
+	Added new lexers for other languages.
+
+2005-08-29  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/cssparser.c:
+	Fixed minimal leak not freeing the libcroco returned error stack.
+
+2005-06-17  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/callbacks.c, src/utils.c:
+	Fixed small glitch on file chooser code - on "Save as " action.
+
+2005-05-21  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/utils.c: Fixed some inconsistencies in file selector function.
+
+	* src/configparser.c, src/filetype-css2.c, src/main.c, src/plugin.c, src/plugin.h, src/callbacks.c:
+	Changes in plugin API and in CSS file type manager.
+
+	* include/plugin.h:
+	Changed return value of marker_next marker_prev functions. This won't break the API.
+
+2005-05-08  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* po/gl.po, po/it.po, po/fr.po, po/de.po, po/es.po, po/cssed.pot, po/ca.po:
+	Updated language files.
+
+	* redhat/cssed.spec: Some changes to match Fedora's guidelines.
+
+	* include/document.h, include/plugin.h, include/cssedwindow.h:
+	Improved and extended the plugin's API. Some other minor changes.
+
+	* pixmaps/cssed-about.png, pixmaps/cssed-icon.png:
+	Updated icons to new version.
+
+	* src/utils.h, src/interface.c, src/main.c, src/plugin.c, src/plugin.h, src/sciwrappers.c, src/utils.c, src/cssedwindow.c, src/cssedwindow.h, src/document.c, src/document.h, src/filetype-css2.c, src/callbacks.c:
+	Improved and extended the plugin's API. Some other minor changes.
+
+	* src/cssdialogs-hash.c:
+	Some cosmetics, changed class - that's areserved word on - C++ with klass to ease reuse.
+
+2005-03-26  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/cssedwindow.c:
+	Improved the handlig of unsaved documents on window close.
+
+	* src/cssedwindow.h, src/callbacks.c, src/cssedwindow.c:
+	Commented out the now unused last_scan_dir field on CssedWindow struct
+
+	* src/utils.c: Various improvements in the digest tree view.
+
+2005-03-25  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/callbacks.h, src/cssedwindow.c, src/doc-scanner.c, src/interface.c, src/callbacks.c:
+	Various improvements in the digest tree view.
+
+	* src/configparser.c, src/utils.c:
+	Changed system dependant directory, to be the same configuration directory in both linux and windows.
+
+	* src/debug.c: Fixed compilation failure on missing include file.
+
+	* Makefile.am, Makefile.in, aclocal.m4, configure, configure.in:
+	Updating build scripts, to reflect the addition of new files.
+
+	* po/ca.po, po/de.po, po/es.po, po/fr.po, po/POTFILES.in, po/gl.po, po/it.po:
+	Updating po files for translators. Don't update your files yet. They're still pending to be cleaned.
+
+	* redhat/cssed.spec: Updated spec file to fedora core 3.
+
+	* redhat/cssed-fc1.spec, redhat/cssed-0.3.0-0-fdr.2.spec:
+	Removed old specs. I will remove all but the upstream one from now.
+
+	* libcroco/Makefile.in, libcroco/parser/Makefile.am, libcroco/parser/Makefile.in, libcroco/parser/cr-om-parser.c:
+	Fixed a bug on my changes to the library. One function was left with the old signature.
+
+	* scintilla/Makefile.in, scintilla/gtk/scintilla-marshal.c, scintilla/gtk/scintilla-marshal.list, scintilla/gtk/Makefile.am, scintilla/gtk/Makefile.in, scintilla/gtk/PlatGTK.cxx, scintilla/gtk/ScintillaGTK.cxx, scintilla/include/Face.py, scintilla/include/HFacer.py, scintilla/include/Platform.h, scintilla/include/SciLexer.h, scintilla/include/Scintilla.h, scintilla/include/Scintilla.iface, scintilla/include/ScintillaWidget.h, scintilla/src/LexOthers.cxx, scintilla/src/Editor.h, scintilla/src/KeyWords.cxx, scintilla/src/LexCPP.cxx, scintilla/src/LexHTML.cxx, scintilla/src/LexPython.cxx, scintilla/src/LexSQL.cxx, scintilla/src/LexTeX.cxx, scintilla/src/SciTE.properties, scintilla/src/ScintillaBase.cxx, scintilla/src/ScintillaBase.h, scintilla/src/StyleContext.h, scintilla/src/AutoComplete.cxx, scintilla/src/AutoComplete.h, scintilla/src/CellBuffer.cxx, scintilla/src/Document.cxx, scintilla/src/Document.h, scintilla/src/DocumentAccessor.cxx, scintilla/src/DocumentAccessor.h, scintilla/src/Editor.cxx:
+	Updated to scintilla 163 pre-release.
+
+	* scintilla/src/LexMPT.cxx, scintilla/src/LexMSSQL.cxx, scintilla/src/LexNsis.cxx, scintilla/src/LexPB.cxx, scintilla/src/LexPOV.cxx, scintilla/src/LexPS.cxx, scintilla/src/LexRuby.cxx, scintilla/src/LexScriptol.cxx, scintilla/src/LexSpecman.cxx, scintilla/src/LexVB.cxx, scintilla/src/LexVHDL.cxx, scintilla/src/LexVerilog.cxx, scintilla/src/LexYAML.cxx, scintilla/src/LexGui4Cli.cxx, scintilla/src/LexKix.cxx, scintilla/src/LexLout.cxx, scintilla/src/LexLua.cxx, scintilla/src/LexMMIXAL.cxx, scintilla/src/LexMatlab.cxx, scintilla/src/LexMetapost.cxx, scintilla/src/LexAU3.cxx, scintilla/src/LexAVE.cxx, scintilla/src/LexBaan.cxx, scintilla/src/LexBasic.cxx, scintilla/src/LexBullant.cxx, scintilla/src/LexCLW.cxx, scintilla/src/LexCaml.cxx, scintilla/src/LexEScript.cxx, scintilla/src/LexEiffel.cxx, scintilla/src/LexErlang.cxx, scintilla/src/LexForth.cxx, scintilla/src/LexFortran.cxx, scintilla/src/LexGen.py, scintilla/src/LexAPDL.cxx, scintilla/src/LexAsm.cxx, scintilla/src/LexAsn1.cxx, scintilla/src/LexAda.cxx:
+	Added new lexers. Now we've got the all lexers in upstream scintilla.It's done because developers will have access to file type to create their own managers. They may need those lexers.
+
+2005-03-24  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/gotoline-dialog.c, src/gotoline-dialog.h:
+	New "go to line" dialog files.
+
+	* src/debug.c:
+	New debug output files, improved with source file name and line number.
+
+	* src/file-type-manager.c, src/file-type-manager.h, src/filetype-hypertext.c, src/filetype-hypertext.h, src/filetype-make.c, src/filetype-make.h, src/filetype-perl.c, src/filetype-perl.h, src/filetype-phpscript.c, src/filetype-phpscript.h, src/filetype-python.c, src/filetype-python.h, src/filetype-sh.c, src/filetype-sh.h, src/filetype-sql.c, src/filetype-sql.h, src/filetype-text.c, src/filetype-text.h, src/filetype-xml.c, src/filetype-xml.h, src/filetypes.h, src/filetype-c.c, src/filetype-c.h, src/filetype-css2.c, src/filetype-css2.h, src/filetype-diff.c, src/filetype-diff.h:
+	New file type management functions.
+
+	* src/Makefile.am, src/Makefile.in, src/document.h, src/floating-list.c, src/interface.c, src/interface.h, src/main.c, src/plugin.c, src/sciwrappers.c, src/selectorparser.c, src/utils.c, src/callbacks.h, src/cssdialogs-menu.c, src/cssdialogs-menu.h, src/cssdialogs-strings.h, src/cssedwindow.c, src/cssedwindow.h, src/cssparser.c, src/cssparser.h, src/debug.h, src/doc-scanner.c, src/doc-scanner.h, src/document.c, src/callbacks.c:
+	Changes in file opening and file type management. Now the CssedFileType is not an identifier but an object holding the properties and interface of a file type. Updated copyright,
+
+	* src/xmlparser.c, src/configparser.c: Update to libxml.
+
+	* src/cssdialogs-interface.h, src/floating-list.c, src/floating-list.h, src/main.c, src/plugin.c, src/plugin.h, src/plugins-dialog.c, src/plugins-dialog.h, src/selector-wizard.c, src/selector-wizard.h, src/selectorparser.c, src/selectorparser.h, src/support.h, src/utils.c, src/utils.h, src/box-wizard.c, src/box-wizard.h, src/color-wizard.c, src/color-wizard.h, src/configdlg-callbacks.c, src/configdlg-callbacks.h, src/configdlg-interface.c, src/configdlg-interface.h, src/cssdialogs-callbacks.c, src/cssdialogs-callbacks.h, src/cssdialogs-class.c, src/cssdialogs-class.h, src/cssdialogs-functions.c, src/cssdialogs-functions.h, src/cssdialogs-hash.c, src/cssdialogs-hash.h, src/cssdialogs-interface.c:
+	Updated copyright (year).
+
+	* src/sciwrappers.c, src/sciwrappers.h:
+	Finally moved the scintilla wrappers to this file
+
+	* src/configparser.c, src/configparser.h, src/document-list.c, src/document-list.h, src/xmlparser.c, src/xmlparser.h:
+	Update to libxml.
+
+2005-03-01  michga  <michga@users.sourceforge.net>
+
+	* src/document.c, po/it.po, src/ChangeLog, src/Changelog, src/callbacks.c, src/cssedwindow.c, po/gl.po, po/de.po, po/es.po, po/fr.po, po/ChangeLog, po/ca.po, po/cssed.pot:
+	Corrected misspelling; changed some strings to conform HUI,
+	add conditional for Darwin; new pot file and fr.po, other to update
+
+2005-02-23  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/interface.c, src/interface.h, src/main.c, src/plugin.c, src/utils.c, src/utils.h, src/xmlparser.c, src/document-list.c, src/document.h, src/callbacks.h, src/cssedwindow.c, src/cssedwindow.h, src/document.c, src/callbacks.c:
+	Test update to check if the libxml port can be bogus on Mac before to continue. No error checking yet.
+
+2005-02-20  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/callbacks.c: Fixed problem with output list.
+
+	* Makefile.in, configure, configure.in:
+	Changed build scripts caused by libcroco update to 0.6.0. Adde dependency to libxml2.
+
+	* libcroco/Makefile.in, libcroco/parser/Makefile.am, libcroco/parser/Makefile.in, libcroco/parser/cr-additional-sel.c, libcroco/parser/cr-additional-sel.h, libcroco/parser/cr-attr-sel.c, libcroco/parser/cr-attr-sel.h, libcroco/parser/cr-cascade.c, libcroco/parser/cr-cascade.h, libcroco/parser/cr-declaration.c, libcroco/parser/cr-declaration.h, libcroco/parser/cr-doc-handler.c, libcroco/parser/cr-doc-handler.h, libcroco/parser/cr-enc-handler.c, libcroco/parser/cr-enc-handler.h, libcroco/parser/cr-fonts.c, libcroco/parser/cr-fonts.h, libcroco/parser/cr-input.c, libcroco/parser/cr-input.h, libcroco/parser/cr-num.c, libcroco/parser/cr-num.h, libcroco/parser/cr-om-parser.c, libcroco/parser/cr-om-parser.h, libcroco/parser/cr-parser.c, libcroco/parser/cr-parser.h, libcroco/parser/cr-parsing-location.c, libcroco/parser/cr-parsing-location.h, libcroco/parser/cr-prop-list.c, libcroco/parser/cr-prop-list.h, libcroco/parser/cr-pseudo.c, libcroco/parser/cr-pseudo.h, libcroco/parser/cr-rgb.c, libcroco/parser/cr-rgb.h, libcroco/parser/cr-sel-eng.c, libcroco/parser/cr-sel-eng.h, libcroco/parser/cr-selector.c, libcroco/parser/cr-selector.h, libcroco/parser/cr-simple-sel.c, libcroco/parser/cr-simple-sel.h, libcroco/parser/cr-statement.c, libcroco/parser/cr-statement.h, libcroco/parser/cr-string.c, libcroco/parser/cr-string.h, libcroco/parser/cr-style.c, libcroco/parser/cr-style.h, libcroco/parser/cr-stylesheet.c, libcroco/parser/cr-stylesheet.h, libcroco/parser/cr-term.c, libcroco/parser/cr-term.h, libcroco/parser/cr-tknzr.c, libcroco/parser/cr-tknzr.h, libcroco/parser/cr-token.c, libcroco/parser/cr-token.h, libcroco/parser/cr-utils.c, libcroco/parser/cr-utils.h, libcroco/parser/libcroco-config.h, libcroco/parser/libcroco-config.h.in, libcroco/parser/libcroco.h:
+	Updated libcroco to 0.6.0
+
+	* scintilla/Makefile.in, scintilla/gtk/Makefile.am, scintilla/gtk/Makefile.in:
+	Minor changes in build scripts.
+
+	* scintilla/src/LexCSS.cxx:
+	Minor changes on font-face and color management
+
+	* src/callbacks.c, src/callbacks.h, src/cssparser.c, src/cssparser.h, src/debug.h, src/doc-scanner.c, src/document.c, src/document-list.c, src/document.h, src/Makefile.am, src/Makefile.in, src/interface.c, src/main.c, src/utils.c, src/utils.h:
+	Fixed various issues with the libcroco update. Changed the Digest and output lists.
+
+2005-02-18  michga  <michga@users.sourceforge.net>
+
+	* src/ChangeLog, src/Changelog, src/cssdialogs-class.h, src/cssedwindow.h, src/document.h, src/interface.c, src/plugin.h, po/gl.po, po/it.po, po/fr.po, po/es.po, po/de.po, po/ChangeLog, po/cssed.pot:
+	Changed accelerator for Plain text in Document submenu chocking with CPP.
+	Integrated comments in headers for plugin doc.
+
+2005-02-17  michga  <michga@users.sourceforge.net>
+
+	* src/ChangeLog, src/Changelog, src/interface.c, po/gl.po, po/it.po, po/de.po, po/es.po, po/fr.po, po/ChangeLog, po/ca.po, po/cssed.pot:
+	Added accelerator to Convert EOLs so that it does not chock with items in
+	the main submenu.
+
+2005-02-10  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/Makefile.in, src/utils.c, src/utils.h, src/document-list.c, src/interface.c, src/document.c:
+	Some usability fixes reported by Michelle.
+
+	* Makefile.in, configure.in, configure, aclocal.m4:
+	Added configure check for gtk-2.6
+
+2005-02-10  michga  <michga@users.sourceforge.net>
+
+	* src/ChangeLog: Adding ChangeLog, removing Changelog
+
+2005-02-09  michga  <michga@users.sourceforge.net>
+
+	* src/interface.c, src/Changelog, po/it.po, po/gl.po, po/fr.po, po/es.po, po/de.po, po/cssed.pot, po/ca.po, po/ChangeLog:
+	Moved documentlist to view menu
+	Changed flag and clear flag menu item
+	Updated po files accordingly
+
+2005-02-09  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* po/ca.po: Fixed one string that was aborting compilation.
+
+	* src/document.c:
+	Fixed glitch on UTF8 detection reported by Michelle Garoche.
+
+2005-02-09  michga  <michga@users.sourceforge.net>
+
+	* po/it.po, src/Changelog, src/callbacks.c, src/document-list.c, src/interface.c, po/gl.po, po/fr.po, po/es.po, po/de.po, po/cssed.pot, configure.in, po/ChangeLog, po/ca.po, ChangeLog:
+	Increased version in configure.in
+	Updated pot and po files, added translator to ca, otherwise all strings
+	are fuzzy.
+	Translated fr.po, others are to be translated.
+	Added conditional on DARWIN for tab colours in callbacks.c
+	Corrected some misspelling in document-list.c
+	Changed my email address in interface.c
+
+2005-02-09  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/utils.c, src/utils.h, src/document-list.c, src/callbacks.h:
+	Fixed glitch on gtk_file_chooser called from the document_list on gtk-2.4, reported by Michelle Garoche.
+
+	* src/document-list.c, src/interface.c, src/callbacks.h, src/document-list.h, src/callbacks.c:
+	Added new option to create a new blank document list.
+
+	* src/document-list.c:
+	Changes to conver the filenames to UTF-8 before writting the document list file.
+
+
+
+2005-02-09  michga  <michele.garoche@easyconnect.fr>
+
+	* configure.in
+	
+	Put version 0.3.1
+
+2004-12-18  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* scintilla/src/LexHTML.cxx:
+	Test fix for the problems reported by Axel Heyne on the scintilla list about highlighting problems.
+
+	* src/document.c:
+	Fixed problem that added an extra white char at end of file. This was specially bad with php library files, as the extra white char leads the server to push out the headers.
+
+2004-12-15  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* scintilla/src/LexHTML.cxx, src/Makefile.am, src/Makefile.in, src/document-list.c, src/document-list.h, src/interface.c, src/callbacks.c, src/callbacks.h, src/cssedwindow.c, src/doc-scanner.c, src/document.c:
+	Added document list, fixed problem with EOL modes, added capabilities to mark documents on different colors (flag).
+
+2004-10-31  iagorubio  <iagorubio@users.sourceforge.net>
+
+	* src/callbacks.h, src/document.c, src/interface.c, src/callbacks.c:
+	Added new "flag document" function, to allow the user to mark opened document's tabs with a given color.
+
+	* redhat/cssed-0.3.0-0-fdr.2.spec: Added Obsoletes tag
+
+	* scintilla/src/CellBuffer.h, scintilla/src/Document.cxx, scintilla/src/Document.h, scintilla/src/Editor.cxx, scintilla/src/Editor.h, scintilla/src/KeyWords.cxx, scintilla/src/LexCPP.cxx, scintilla/src/LexHTML.cxx, scintilla/src/LexLisp.cxx, scintilla/src/LexOthers.cxx, scintilla/src/LexPerl.cxx, scintilla/src/LexSQL.cxx, scintilla/src/PropSet.cxx, scintilla/src/ScintillaBase.cxx, scintilla/src/StyleContext.cxx, scintilla/src/StyleContext.h, scintilla/src/UniConversion.cxx, scintilla/src/CallTip.cxx, scintilla/src/CallTip.h, scintilla/src/CellBuffer.cxx, scintilla/include/KeyWords.h, scintilla/include/Platform.h, scintilla/include/PropSet.h, scintilla/include/SciLexer.h, scintilla/include/Scintilla.h, scintilla/include/Scintilla.iface, scintilla/gtk/PlatGTK.cxx, scintilla/gtk/ScintillaGTK.cxx, scintilla/gtk/scintilla-marshal.c, scintilla/version.txt:
+	Updated Scintilla to 1.62

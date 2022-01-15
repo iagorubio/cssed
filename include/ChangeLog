@@ -1,0 +1,11 @@
+2004-09-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* include/cssdialogs-class.h, include/cssewindow.h, 
+	include/document.h, include/plugin.h
+	
+	Correcting misspelling
+	
+	* include/ChangeLog
+	
+	Added a ChangeLog to track the changes in src directory
+	

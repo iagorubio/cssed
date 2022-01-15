@@ -1,0 +1,43 @@
+text/plain
+	ext: txt
+
+text/html
+	ext: html shtml htm
+
+text/css
+	ext: css
+
+text/x-javascript
+	ext: js
+
+text/x-python
+	ext: py
+
+text/x-perl
+	ext: pl perl
+
+application/x-php
+	ext: php php3 php4
+
+text/x-java
+	ext: java
+
+text/x-sql
+	ext: sql
+
+text/xml
+	ext: xml svg
+
+text/x-diff
+	ext: diff patch
+
+text/x-sh
+	ext: sh
+
+text/x-c++src
+	ext: c++ cpp cxx hpp hxx
+
+text/x-csrc	
+	ext: c h 
+
+

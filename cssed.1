@@ -1,0 +1,47 @@
+.\" Use groff -man -Tassci cssed.1 to see this page or man ./cssed.1
+.TH "CSSED" "0.2.1" "13 April 2004" "Iago Rubio Sanfiz" "css editor"
+.SH "NAME"
+cssed \- A tiny GTK2 CSS editor and validator.
+.SH "SINOPSIS"
+.B cssed [file] | [file] ...
+.SH "DESCRIPTION"
+.B cssed
+is a small but powerful CSS editor for web developing.
+.P
+It features auto completion, CSS syntax validation, and other utilities to help web developer to create and maintain CSS style sheets.
+.SH "OPTIONS"
+.TP 
+.B [file] ....
+Anything passed to the command line will be taken as a regular text file and opened in cssed's editor window.
+.SH "FILES"
+.TP 
+.B cssed\-def\-.xml
+It's the CSS definition file that stores the CSS valid values or properties. 
+.B cssed
+can use the system file installed by default or any file named
+.B cssed\-def.xml 
+in the 
+.B .cssed 
+folder on the user\'s HOME directory.
+.TP 
+.B cssed\-cfg.xml
+It's the user\'s configuration file. It stores the default document settings and the highlighting color scheme. 
+The file is stored always on close on the 
+.B .cssed 
+folder on the user's HOME directory.
+.SH "USING CSSED"
+.B cssed
+is a X graphical application so it\'s used with it\'s menus and toolbar entries. To know more about how to use cssed visit http://cssed.sourceforge.net.
+.SH "LOCALIZED INTERFACE"
+To run cssed with a Spanish interface on a non Spanish Mac system, just issue the following command in an xterm or equivalent:
+.TP 
+.B Bash and zsh users
+export LANGUAGE=es_ES; cssed
+.TP 
+.B tcsh users
+set LANGUAGE es_ES; cssed
+.P
+Same applies for other languages available in cssed, i.e. English (en_US) and French (fr_FR) at the time being.
+.SH "AUTHOR"
+Iago Rubio <iago.rubio@hispalinux.es> 
+.P http://cssed.sourceforge.net

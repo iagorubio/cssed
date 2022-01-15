@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Cssed Editor
+Name[en]=Cssed Editor
+Name[es]=Editor Cssed
+Name[fr]=Éditeur Cssed
+Comment=Css and Web Development Editor
+Comment[fr]=Éditeur de feuilles de style CSS et de sites web 
+Exec=cssed
+Icon=/usr/share/pixmaps/cssed_icon.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;GNOME;Application;Development;WebDevelopment;
+MimeType=text/html;text/css;text/x-javascript;text/x-python;text/x-perl;application/x-php;text/x-java;text/javascript;text/x-php;application/x-cgi;application/x-javascript;application/x-perl;application/x-python;application/xhtml+xml;text/mathml;text/x-csrc;text/x-chdr;text/x-dtd;text/x-sql;text/xml;

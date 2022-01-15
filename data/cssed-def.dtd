@@ -1,0 +1,9 @@
+<!ELEMENT csssed-def ( element+ ) >
+<!ATTLIST csssed-def implementation NMTOKEN #REQUIRED >
+
+<!ELEMENT element ( value+ ) >
+<!ATTLIST element name ID #REQUIRED >
+
+<!ELEMENT value EMPTY >
+<!ATTLIST value name CDATA #REQUIRED >
+<!ATTLIST value type ( fixed-string | string ) #REQUIRED >

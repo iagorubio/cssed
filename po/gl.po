@@ -1,0 +1,3143 @@
+# Galician translation of cssed
+# Copyright (C) 2004, Iago Rubio
+# This file is distributed under the same license as the cssed package.
+# Iago Rubio <iago.rubio@hispalinux.es>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cssed-0.4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-03-10 22:04+0100\n"
+"PO-Revision-Date: 2004-09-11 23:52+0200\n"
+"Last-Translator: Iago Rubio <iago.rubio@hispalinux.es>\n"
+"Language-Team: Galician <gpul-traduccion@ceu.fi.udc.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/box-wizard.c:563
+msgid "<span color='black' size='smaller'>border</span>"
+msgstr "<span color='black' size='smaller'>borde</span>"
+
+#: src/box-wizard.c:564
+msgid "<span color='blue' size='smaller'>margin (transparent)</span>"
+msgstr "<span color='blue' size='smaller'>margin (transparente)</span>"
+
+#: src/box-wizard.c:565
+msgid "<span color='blue' size='smaller'>padding (transparent)</span>"
+msgstr "<span color='blue' size='smaller'>padding(transparent)</span>"
+
+#: src/box-wizard.c:566
+msgid "<span color='white' size='smaller'>content</span>"
+msgstr "<span color='white' size='smaller'>content</span>"
+
+#: src/box-wizard.c:567
+msgid "<span color='navy' size='smaller'>TOP</span>"
+msgstr "<span color='navy' size='smaller'>TOP</span>"
+
+#: src/box-wizard.c:568
+msgid "<span color='navy' size='smaller'>LEFT</span>"
+msgstr "<span color='navy' size='smaller'>LEFT</span>"
+
+#: src/box-wizard.c:569
+msgid "<span color='navy' size='smaller'>BOTTOM</span>"
+msgstr "<span color='navy' size='smaller'>BOTTOM</span>"
+
+#: src/box-wizard.c:570
+msgid "<span color='navy' size='smaller'>RIGHT</span>"
+msgstr "<span color='navy' size='smaller'>RIGHT</span>"
+
+#: src/box-wizard.c:755
+msgid "Box properties dialog"
+msgstr "Diálogo de propiedades da caixa"
+
+#: src/box-wizard.c:780 src/box-wizard.c:848 src/box-wizard.c:854
+#: src/box-wizard.c:860 src/box-wizard.c:866 src/box-wizard.c:872
+#: src/box-wizard.c:878 src/box-wizard.c:884 src/box-wizard.c:890
+#: src/box-wizard.c:944 src/box-wizard.c:950 src/box-wizard.c:956
+#: src/box-wizard.c:1097 src/box-wizard.c:1103 src/box-wizard.c:1249
+#: src/box-wizard.c:1279 src/box-wizard.c:1285 src/box-wizard.c:1291
+#: src/box-wizard.c:1297
+msgid "Set"
+msgstr "Axustar"
+
+#: src/box-wizard.c:1069
+msgid "margin-top"
+msgstr "margin-top"
+
+#: src/box-wizard.c:1077
+msgid "margin-left"
+msgstr "margin-left"
+
+#: src/box-wizard.c:1109
+msgid "<span size='large'>Padding</span>"
+msgstr "<span size='large'>Padding (recheo)</span>"
+
+#: src/box-wizard.c:1118
+msgid "<span size='large'>Margin</span>"
+msgstr "<span size='large'>Margin (marxen)</span>"
+
+#: src/box-wizard.c:1127
+msgid "<span size='large'>Border</span>"
+msgstr "<span size='large'>Borde</span>"
+
+#: src/box-wizard.c:1208 src/box-wizard.c:1303
+msgid "<span size='large'>Box</span>"
+msgstr "<span size='large'>Propiedades da caixa</span>"
+
+#: src/box-wizard.c:1233
+msgid "All properties"
+msgstr "Toda-las propiedades"
+
+#: src/box-wizard.c:1344
+msgid "width"
+msgstr "width"
+
+#: src/box-wizard.c:1352
+msgid "height"
+msgstr "height"
+
+#: src/box-wizard.c:1360
+msgid "border"
+msgstr "borde"
+
+#: src/box-wizard.c:1368
+msgid "margin"
+msgstr "marxen"
+
+#: src/box-wizard.c:1376
+msgid "padding"
+msgstr "recheo"
+
+#: src/box-wizard.c:1384
+msgid "<span size='large'>Box properties</span>"
+msgstr "<span size='large'>Propiedades da caixa</span>"
+
+#: src/box-wizard.c:1417
+msgid "Shorthand properties"
+msgstr "Propiedades cortas"
+
+#: src/box-wizard.c:1440
+msgid ""
+"From: http://www.w3.org/TR/CSS2/box.html\n"
+"\n"
+"Each box has a content area (e.g., text, an image, etc.) and optional "
+"surrounding padding, border, and margin areas; the size of each area is "
+"specified by properties defined below. The following diagram shows how these "
+"areas relate and the terminology used to refer to pieces of margin, border, "
+"and padding.\n"
+"\n"
+"The perimeter of each of the four areas (content, padding, border, and "
+"margin) is called an \"edge\", so each box has four edges:\n"
+"\n"
+"- content edge or inner edge:\n"
+"    The content edge surrounds the element's rendered content. \n"
+"\n"
+"- padding edge:\n"
+"    The padding edge surrounds the box padding. If the padding has 0 width, "
+"the padding edge is the same as the content edge. The padding edge of a box "
+"defines the edges of the containing block established by the box. \n"
+"\n"
+"- border edge:\n"
+"    The border edge surrounds the box's border. If the border has 0 width, "
+"the border edge is the same as the padding edge. \n"
+"\n"
+"- margin edge or outer edge:\n"
+"    The margin edge surrounds the box margin. If the margin has 0 width, the "
+"margin edge is the same as the border edge. "
+msgstr ""
+"De: http://www.w3.org/TR/CSS2/box.html\n"
+"\n"
+"Cada caixa ten unha area de contido (ex: un texto, unha imaxe) e como "
+"opciónun recheo o derredor, borde e marxen. o tamaño de cada area "
+"eespecificado por as propiedades definidas abaixo. O diagrama mostra como "
+"istasarea relaccionanse e a terminoloxia usada pra referirse as distintas "
+"partes da caixa: marxen, bordeou recheo.\n"
+"\n"
+"O perimetro de cada unha das catro areas (contido, recheo, borde emarxen) e "
+"chamado un \"limite\", entón cada caixa ten catro limites:\n"
+"\n"
+"- contido o limite interno (content):\n"
+"    O limite do contido rodea o elemento mostrado. \n"
+"\n"
+"- limite do recheo (padding):\n"
+"    O recheo (padding)  rodea a caixa. Si o recheo ten un ancho de 0, o "
+"limite do recheo e o mismo que o limite do contido. O limite do recheo da "
+"caixadefine o limete do bloque que conten a caixa. \n"
+"\n"
+"- limite do borde (border):\n"
+"    O limite do borde rodea o borde da caixa. Si o borde ten un ancho de 0, "
+"o limite do borde e o mesmo que o limite do recheo. \n"
+"\n"
+"- limite da marxen ou limite externo (margin):\n"
+"\tO limite do marxen rodea o marxen da caixa. Si a marxen ten un ancho de 0, "
+"olimite do marxen e o mesmo que o limite do borde."
+
+#: src/box-wizard.c:1446
+msgid "Quick help"
+msgstr "Axuda rápida"
+
+#: src/callbacks.c:111
+msgid "Programming error!!"
+msgstr "Error de programación!"
+
+#: src/callbacks.c:112
+msgid ""
+"An invalid document has been passed,\n"
+"things are going to fail from this point.\n"
+"Please tell the developers this has occurred."
+msgstr ""
+"Pasouse un documento inválido,\n"
+"as cousas van a fallar dende agora\n"
+"Por favor, dille os programadores que isto\n"
+"pasou."
+
+#: src/callbacks.c:127 src/callbacks.c:172
+msgid "Untitled doc"
+msgstr "Documento sen nome"
+
+#: src/callbacks.c:177
+msgid "Document modified (not saved)"
+msgstr "Documento modificado ( non está gardado )"
+
+#: src/callbacks.c:179
+msgid "Document not modified (saved)"
+msgstr "Documento sen modificacións (gardouse xa)"
+
+#: src/callbacks.c:182
+#, c-format
+msgid "Document length: %d"
+msgstr "Tamaño do documento : %d"
+
+#: src/callbacks.c:185
+msgid "Autocompletion enabled for this document"
+msgstr "Auto completado traballando pra este documento"
+
+#: src/callbacks.c:187
+msgid "Autocompletion disabled for this document"
+msgstr "Auto completado apagado en este documento"
+
+#: src/callbacks.c:191
+msgid "Folding enabled for this document"
+msgstr "Encarpetado traballando pra este documento"
+
+#: src/callbacks.c:193
+msgid "Folding disabled for this document"
+msgstr "Encarpetado desactivado neste documento"
+
+#: src/callbacks.c:196
+#, fuzzy, c-format
+msgid "Document type: %s"
+msgstr "Tipo de documento: %s"
+
+#: src/callbacks.c:201
+msgid "Encoding: Default"
+msgstr "Codificación: por defecto"
+
+#: src/callbacks.c:204
+msgid "Encoding: UTF-8"
+msgstr "Codificación: UTF-8"
+
+#: src/callbacks.c:207
+msgid "Encoding: DBCS"
+msgstr "Codificación: DBCS"
+
+#: src/callbacks.c:212
+msgid "Tabs: using tab character \\t instead of spaces"
+msgstr ""
+
+#: src/callbacks.c:214
+msgid "Tabs: using spaces instead of tab character \\t"
+msgstr ""
+
+#: src/callbacks.c:216
+#, c-format
+msgid "Spaces per tab: %i"
+msgstr ""
+
+#: src/callbacks.c:245 src/callbacks.c:272 src/callbacks.c:2497
+msgid "Unsupported file type"
+msgstr "Tipo de arquivo non soportado"
+
+#: src/callbacks.c:245 src/callbacks.c:272
+msgid "I can only validate CSS files!"
+msgstr "So podo comprobar arquivos CSS"
+
+#: src/callbacks.c:306
+msgid "Programming error"
+msgstr "Error de programación"
+
+#: src/callbacks.c:306
+#, fuzzy, c-format
+msgid ""
+"Please send this error to http://cssed.sf.net\n"
+"%s:%d - on_menu_new_activate()- returned pointer %p is not the expected "
+"GtkNotebook"
+msgstr ""
+"Por favor made iste erro  a http://cssed.sf.net\n"
+"%s:%d - on_menu_new_activate()- o punteiro %p non é o esperado GtkNotebook"
+
+#. now we can create and stylised editor
+#: src/callbacks.c:310 src/cssparser.c:581 src/doc-scanner.c:231
+#: src/document.c:1672 src/document-list.c:104 src/interface.c:1760
+#: src/plugin.c:1540
+msgid "Untitled"
+msgstr "Sen nome"
+
+#: src/callbacks.c:323 src/plugin.c:482
+msgid "Select file to open"
+msgstr "Selecciona arquivo pra abrir"
+
+#: src/callbacks.c:329 src/callbacks.c:364 src/document-list.c:274
+msgid "Error opening file"
+msgstr "Error abrindo o arquivo"
+
+#: src/callbacks.c:346
+msgid "Insert path to open"
+msgstr "Inserte ruta o arquivo pra abri-lo"
+
+#: src/callbacks.c:352 src/document-list.c:911 src/interface.c:1777
+msgid "Path"
+msgstr "Ruta"
+
+#: src/callbacks.c:396
+msgid "This file have no name"
+msgstr "Iste arquivo non ten nome"
+
+#: src/callbacks.c:396
+msgid ""
+"I cannot know the location where to store this file.\n"
+"Do you want to select the location where this\n"
+"file will be saved?"
+msgstr ""
+"No sei u-lo arquivo ten que ser gardado.\n"
+"Queres escoller onde garda-lo arquivo?"
+
+#: src/callbacks.c:433 src/callbacks.c:452
+msgid "File is not saved, do you want to close it?"
+msgstr "O arquivo non está gardado. Quere pecha-lo?"
+
+#: src/callbacks.c:434
+#, fuzzy
+msgid ""
+"The file has changed and the changes will be lost if you close it. Click in "
+"the <b>\"Save\"</b> button to save the file before closing, click the  <b>"
+"\"No\"</b> button if you want to skip to close the file, click the <b>\"Yes"
+"\"</b> button if you want to close the file unsaved."
+msgstr ""
+"O arquivo trocou e os trocos perderan-se se o pechas. Pulsa no botón<b>"
+"\"Cancelar\"</b> se non queres pecha-lo, ou pulsa o botón <b>\"Aceptar\"</b> "
+"se queres pecha-lo arquivo."
+
+#. add the filename before save the file to avoid other prompts asking
+#. for the file's name.
+#: src/callbacks.c:440
+#, fuzzy
+msgid "Select file to save"
+msgstr "Selecciona arquivo"
+
+#: src/callbacks.c:453
+#, fuzzy, c-format
+msgid ""
+"The file has changed and the changes will be lost if you close it. Click in "
+"the <b>\"Save\"</b> button to save the file before closing, click the  <b>"
+"\"No\"</b> button if you want to skip to close the file, click the <b>\"Yes"
+"\"</b> button if you want to close the file unsaved.\n"
+"\n"
+"File name:<b>%s</b>\n"
+msgstr ""
+"O arquivo trocou e os trocos perderan-se se o pechas. Pulsa no botón<b>"
+"\"Cancelar\"</b> se non queres pecha-lo, ou pulsa o botón <b>\"Aceptar\"</b> "
+"se queres pecha-lo arquivo."
+
+#: src/callbacks.c:490
+msgid "Please confirm this action"
+msgstr "Por favor confirma ista acción"
+
+#: src/callbacks.c:490
+msgid ""
+"This file will be closed, all changes will be lost,\n"
+"and it will be opened the previously saved version.\n"
+"\n"
+"Do you want to continue?\n"
+msgstr ""
+"Iste arquivo serà pechado, os seus cambios perderan-se,\n"
+"e abrira-se a versión gardada no disco.\n"
+"\n"
+"¿ Queres continuar ?\n"
+
+#: src/callbacks.c:496
+msgid "File not saved"
+msgstr "Arquivo non gardado"
+
+#: src/callbacks.c:496
+#, fuzzy
+msgid "This file is not saved, unable to revert to previous file."
+msgstr "O arquivo non está gardado, non podo abri-la versión anterior"
+
+#: src/callbacks.c:505
+#, fuzzy
+msgid "Cannot reopen the file"
+msgstr ""
+"Non podo abri-lo arquivo\n"
+"%s"
+
+#: src/callbacks.c:507
+msgid "File does not exist"
+msgstr "O diálogo non existe"
+
+#: src/callbacks.c:507
+#, fuzzy, c-format
+msgid ""
+"The file is not saved on disk\n"
+"and may have been deleted by another process.\n"
+"%s\n"
+msgstr ""
+"O arquivo non esta gardado no disco\n"
+"e pode ser que fora borrado por outro programa."
+
+#: src/callbacks.c:539
+#, fuzzy
+msgid "Enter file name to save .."
+msgstr "Selecciona arquivo"
+
+#: src/callbacks.c:1033
+msgid "Select font for current document"
+msgstr "Elixa fonte pra iste documento"
+
+#: src/callbacks.c:1229 src/callbacks.c:1231
+msgid "Select file"
+msgstr "Selecciona arquivo"
+
+#: src/callbacks.c:1670
+msgid "Menu error"
+msgstr "Error nos menus"
+
+#: src/callbacks.c:1671
+msgid ""
+"Cannot get current document to change menus.\n"
+"Menus state will be out of sync with the document\n"
+msgstr ""
+"Non podo cambia-los menus de iste documento.\n"
+"O estado dos menus esta sen sincronización co documento\n"
+
+#: src/callbacks.c:1735
+msgid "The cursor must be into a declaration."
+msgstr "O cursor a de estar dentro da declaración"
+
+#: src/callbacks.c:1736
+msgid ""
+"You should place the cursor between the opening\n"
+"and closing braces of any declaration to be scanned\n"
+msgstr ""
+"Debes coloca-lo cursor entre os parentesis de\n"
+"apertura e peche da declaración que será escaneada\n"
+
+#: src/callbacks.c:1918
+msgid "No next marker"
+msgstr "Non hay mais marcadores pra diante"
+
+#: src/callbacks.c:1919
+msgid ""
+"There is no marker between the current\n"
+"position and the end of the document."
+msgstr ""
+"Non hai marcadores dende a posición actual\n"
+"o final do arquivo."
+
+#: src/callbacks.c:1941
+msgid "No previous marker"
+msgstr "Non hay mais marcadores cara atras"
+
+#: src/callbacks.c:1942
+msgid ""
+"There is no marker between the current\n"
+"position and the start of the document."
+msgstr ""
+"Non hai marcadores dende a posición actual\n"
+"e o comenzo do documento"
+
+#: src/callbacks.c:2432
+msgid "Nothing to replace"
+msgstr "Nada pra reemplazar"
+
+#: src/callbacks.c:2433
+msgid ""
+"There must be some text selected\n"
+"to be replaced.\n"
+"Please select the text to replace or repeat the search"
+msgstr ""
+"Ten que seleccionar algún texto pra pode-lo reemplazar\n"
+"Seleccione o texto que quere reemplazar ou repita a búsqueda"
+
+#: src/callbacks.c:2492
+msgid "This file is not saved"
+msgstr "Iste arquivo non foi gardado"
+
+#: src/callbacks.c:2492
+#, fuzzy
+msgid "The file is not saved, please save it and try again."
+msgstr "O arquivo non está gardado, non podo abri-la versión anterior"
+
+#: src/callbacks.c:2497
+msgid "I can only parse CSS files!"
+msgstr "So podo ler arquivos CSS"
+
+#: src/callbacks.c:2574 src/callbacks.c:2637 src/document.c:250
+#: src/document.c:349 src/document.c:661 src/document-list.c:343
+msgid "Cannot open file"
+msgstr "Non podo abri-lo arquivo"
+
+#: src/callbacks.c:3217
+#, fuzzy
+msgid "Edit color"
+msgstr "Cor do borde"
+
+#: src/color-wizard.c:137 src/interface.c:1624
+msgid "Color wizard"
+msgstr "Asistente de cores"
+
+#: src/color-wizard.c:302 src/configdlg-interface.c:36
+msgid "foreground"
+msgstr "cor de frente"
+
+#: src/color-wizard.c:308 src/configdlg-interface.c:37
+#: src/cssdialogs-menu.c:478
+msgid "background"
+msgstr "cor de fonde"
+
+#: src/color-wizard.c:314
+msgid "background attachment"
+msgstr "axuste do fondo"
+
+#: src/color-wizard.c:320
+msgid "border top"
+msgstr "borde arriba"
+
+#: src/color-wizard.c:326
+msgid "border right"
+msgstr "borde dereita"
+
+#: src/color-wizard.c:332
+msgid "border bottom"
+msgstr "borde abaixo"
+
+#: src/color-wizard.c:338
+msgid "border left"
+msgstr "borde dereita"
+
+#: src/color-wizard.c:344
+msgid "outline"
+msgstr "line exterior"
+
+#: src/color-wizard.c:368 src/color-wizard.c:391 src/color-wizard.c:414
+#: src/color-wizard.c:437 src/color-wizard.c:460 src/color-wizard.c:483
+#: src/color-wizard.c:506 src/color-wizard.c:529
+msgid "   "
+msgstr "   "
+
+#: src/color-wizard.c:804
+msgid "Select a color"
+msgstr "Selecciona unha cor"
+
+#: src/configdlg-callbacks.c:1280
+msgid "Select a color for this style"
+msgstr "Selecciona unha cor pra iste estilo"
+
+#: src/configdlg-interface.c:38
+msgid "bold"
+msgstr "negrita"
+
+#: src/configdlg-interface.c:293 src/interface.c:1536
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: src/configdlg-interface.c:326
+msgid "View line numbers"
+msgstr "Ver os numeros de liña"
+
+#: src/configdlg-interface.c:333
+msgid ""
+"check this if you want documents to be opened with line numbers visible."
+msgstr "marca isto se quere os documentos abertos co numero de liña visible."
+
+#: src/configdlg-interface.c:339
+msgid "View line endings"
+msgstr "Ver os finais de liña"
+
+#: src/configdlg-interface.c:346
+msgid ""
+"check this if you want documents to be opened with line endings visible."
+msgstr "marca isto se quere os documentos abertos co finais de liña visible."
+
+#: src/configdlg-interface.c:352
+msgid "View white spaces"
+msgstr "Ver espacios en branco"
+
+#: src/configdlg-interface.c:359
+msgid ""
+"check this if you want documents to be opened with white spaces visible."
+msgstr ""
+"marca isto se quere os documentos abertos co espacios en branco visible."
+
+#: src/configdlg-interface.c:365
+msgid "Wrap long lines (\"view lines wrapped\" in the document menu)"
+msgstr "Partir liñas longas"
+
+#: src/configdlg-interface.c:371
+msgid ""
+"check this if you want the document text lines to wrap when they reach the "
+"editor right side"
+msgstr ""
+"marca isto se quere as liñas de documentos partidas cando cheguen olado "
+"dereito da fiestra de edición"
+
+#: src/configdlg-interface.c:378
+msgid "Enable autocompletion"
+msgstr "Activar auto-completado"
+
+#: src/configdlg-interface.c:385
+msgid "check this if you want documents to start with auto completion enabled"
+msgstr ""
+"marca isto se quere que os documentos se abran con auto completado activado"
+
+#: src/configdlg-interface.c:391
+msgid "Enable folding"
+msgstr "Activar encarpetado"
+
+#: src/configdlg-interface.c:398
+msgid ""
+"check this if you want the documents to start with folding enabled by default"
+msgstr "marca isto se quere os documentos se abran con encarpetado activado"
+
+#: src/configdlg-interface.c:404
+#, fuzzy
+msgid "Use tabs instead of white spaces"
+msgstr "Ver espacios en branco"
+
+#: src/configdlg-interface.c:411
+#, fuzzy
+msgid "check this if you want to use the tab character instead of white spaces"
+msgstr ""
+"marca isto se quere os documentos abertos co espacios en branco visible."
+
+#: src/configdlg-interface.c:420
+msgid "Ammount of spaces on each tab"
+msgstr ""
+
+#: src/configdlg-interface.c:434
+msgid "<span size='large'>Select here the document's default settings</span>"
+msgstr ""
+"<span size='large'>Selecciona aqui os axustes por defecto do documento</span>"
+
+#: src/configdlg-interface.c:444
+msgid "<span size='medium'><b>Document settings</b></span>"
+msgstr "<span size='medium'><b>Axustes do documento</b></span>"
+
+#: src/configdlg-interface.c:1101
+msgid "<span size='large'>Default</span> - default style"
+msgstr "<span size='large'>Default</span> - default style"
+
+#: src/configdlg-interface.c:1113
+msgid "<span size='large'>Tag</span> - selector style (td,a,etc...)"
+msgstr ""
+
+#: src/configdlg-interface.c:1125
+msgid "<span size='large'>Unknown Pseudoclass</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1138
+msgid "<span size='large'>Operator</span> -braces, etc ..."
+msgstr ""
+
+#: src/configdlg-interface.c:1148
+msgid "<span size='large'>Valid Property</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1159
+msgid "<span size='large'>Invalid Property</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1170
+msgid "<span size='large'>Value</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1180
+msgid "<span size='large'>Unknown Value</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1190
+msgid "<span size='large'>Important</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1201
+msgid "<span size='large'>Directive</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1226
+msgid "click here to set the foreground color for this style"
+msgstr ""
+
+#: src/configdlg-interface.c:1251
+msgid "<span size='large'>Comment</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1673
+msgid "<span size='large'>Double quoted string</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1686
+msgid "<span size='large'>Single quoted string</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1699
+msgid "<span size='large'>Class</span> - a CSS class <i>tag.class</i>"
+msgstr ""
+
+#: src/configdlg-interface.c:1710
+msgid "<span size='large'>Id</span> - a CSS id <i>#id</i>"
+msgstr ""
+
+#: src/configdlg-interface.c:1721
+msgid "<span size='large'>Function</span> - url() , attr() , etc ..."
+msgstr ""
+
+#: src/configdlg-interface.c:1731
+msgid "<span size='large'>Number</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1742
+msgid "<span size='large'>Valid Unit</span> - pt, px, em, etc ..."
+msgstr ""
+
+#: src/configdlg-interface.c:1751
+msgid "<span size='large'>Color</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1762
+msgid "<span size='large'>Hexadecimal color</span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1774
+msgid "<span size='large'>Attribute Match</span> as img[alt=\"hi\"]"
+msgstr ""
+
+#: src/configdlg-interface.c:1787
+msgid "<span size='large'>Language</span> - as td:lang(en)"
+msgstr ""
+
+#: src/configdlg-interface.c:1798
+msgid "<span size='large'>Pseudoclass</span> - hover, link, ..."
+msgstr ""
+
+#: src/configdlg-interface.c:1810
+msgid "<span size='medium'><b>Highlighting</b></span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1866
+msgid "<span size='medium'><b>Font</b></span>"
+msgstr ""
+
+#. *********************************************************************
+#: src/configdlg-interface.c:1877
+msgid "<span size='medium'><b>Other</b></span>"
+msgstr ""
+
+#: src/configdlg-interface.c:1890
+msgid "Apply changes"
+msgstr ""
+
+#: src/configdlg-interface.c:1896
+msgid "Default browser command"
+msgstr ""
+
+#: src/configdlg-interface.c:1899
+msgid "Current browser command: "
+msgstr ""
+
+#: src/configdlg-interface.c:1903
+msgid "None"
+msgstr ""
+
+#: src/configparser.c:154 src/xmlparser.c:168
+#, fuzzy
+msgid "Error parsing XML definition file"
+msgstr "Error abrindo o arquivo"
+
+#: src/configparser.c:155
+#, c-format
+msgid ""
+"The parser found error on the xml file\n"
+"%s\n"
+"\n"
+"Error code: %d."
+msgstr ""
+
+#: src/configparser.c:390
+msgid "Configuration file error"
+msgstr ""
+
+#: src/configparser.c:391
+#, c-format
+msgid ""
+"Bad XML configuration file\n"
+"Depth %d at element %s\n"
+"Max deptph must be 3"
+msgstr ""
+
+#: src/cssdialogs-callbacks.c:437
+msgid "string dialog: refusing to add empty values."
+msgstr "diálogo de cadea: rexeitando engadir valores valeiros."
+
+#: src/cssdialogs-callbacks.c:490
+msgid "uri dialog: rejecting to add empty values"
+msgstr "diálogo de url: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:543
+msgid "attribute dialog: rejecting to add empty values"
+msgstr "diálogo de atributo: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:597
+msgid "counter dialog: rejecting to add empty identifier. Value required."
+msgstr ""
+"diálogo de contador: rexeitando engadir identificador valeiro. Valor "
+"obligatorio."
+
+#: src/cssdialogs-callbacks.c:648
+msgid "font dialog: rejecting to add empty values."
+msgstr "diálogo de fonte: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:768
+msgid "font family dialog: rejecting to add empty values."
+msgstr "diálogo de familia da fonte: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:978
+msgid "identifier dialog: rejecting to add empty values. Identifier required."
+msgstr "diálogo de identificador: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:1130
+msgid "list style dialog: rejecting to add empty values"
+msgstr "diálogo de estilo da lista: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:1160
+msgid "margin property dialog: rejecting to add empty values."
+msgstr "diálogo das propiedades do marxen: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:1302
+msgid "padding property dialog: no value in dialog, defaulting to zero."
+msgstr ""
+"diálogo de propiedades de recheo: valores valeiros no diálogo, usando cero."
+
+#: src/cssdialogs-callbacks.c:1375
+msgid "outline dialog: rejecting to add empty values."
+msgstr "diálogo de linea externa: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:1430
+msgid "pause dialog: rejecting to add empty values"
+msgstr "diálogo de pausa: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:1596
+msgid ""
+"play during dialog: value \"uri\" required, rejecting to add invalid values"
+msgstr ""
+"diálogo de soando mentras: valor \"uri\" requerido, rexeitando engadir "
+"valores valeiros"
+
+#: src/cssdialogs-callbacks.c:1717
+msgid "quotes dialog: nothing in the list, rejecting to add empty values."
+msgstr ""
+"diálogo de comillas: Lista veleira. Rexeitando engadir valores valeiros."
+
+#: src/cssdialogs-callbacks.c:2022
+msgid ""
+"text shadow dialog: shadow list selected but nothing in the list. Rejecting "
+"to add empty values."
+msgstr ""
+"diálogo de sombra de texto: lista de sombras seleccionado mais non hay nada "
+"na lista. Rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:2142
+msgid "voice family dialog: rejecting to add empty values"
+msgstr "diálogo de familia de voces:  rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-callbacks.c:2173
+msgid ""
+"width style and color dialog: nothing selected. rejecting to add empty "
+"values."
+msgstr "diálogo de ancho, estilo e cor: rexeitando engadir valores valeiros"
+
+#: src/cssdialogs-functions.c:150
+msgid "background dialog: no value selected, defaulting to none"
+msgstr ""
+
+#: src/cssdialogs-functions.c:355
+msgid "border dialog: no value selected defaulting to \"none\""
+msgstr ""
+
+#: src/cssdialogs-functions.c:526
+msgid "border width single dialog: no value selected defaulting to \"none\""
+msgstr ""
+
+#: src/cssdialogs-functions.c:1645
+msgid "list style dialog: image is selected but empty, ignoring ..."
+msgstr ""
+
+#: src/cssdialogs-functions.c:1799
+msgid "margin: only one value used. Will be applied to all margins."
+msgstr ""
+
+#: src/cssdialogs-functions.c:1805
+msgid ""
+"margin: two values used. First will be applied to top/bottom, second to left/"
+"right."
+msgstr ""
+
+#: src/cssdialogs-functions.c:1811
+msgid ""
+"margin: three values used. First will be used to top, second to left/right "
+"and third to bottom."
+msgstr ""
+
+#: src/cssdialogs-functions.c:2010
+msgid "padding: only one value used. Will be applied to all sides."
+msgstr ""
+
+#: src/cssdialogs-functions.c:2012
+msgid ""
+"padding: two values used. First will be applied to top/bottom, second to "
+"left/right."
+msgstr ""
+
+#: src/cssdialogs-functions.c:2014
+msgid ""
+"padding: three values used. First will be used to top, second to left/right "
+"and third to bottom."
+msgstr ""
+
+#: src/cssdialogs-functions.c:2172
+msgid ""
+"pause dialog: only pause before selected, defaulting pause-after to 0 "
+"millisecond."
+msgstr ""
+
+#: src/cssdialogs-functions.c:2566
+msgid "text shadow dialog: using list values, ignoring other dialog choices."
+msgstr ""
+
+#: src/cssdialogs-interface.c:98 src/cssdialogs-menu.c:974
+#: src/cssdialogs-menu.c:1287
+msgid "Angle"
+msgstr "Ángulo"
+
+#: src/cssdialogs-interface.c:103
+msgid "Unit"
+msgstr "Unidade"
+
+#: src/cssdialogs-interface.c:315
+msgid "Background color"
+msgstr "Cor do fondo"
+
+#: src/cssdialogs-interface.c:453
+msgid "Background position"
+msgstr "Posición do fondo"
+
+#: src/cssdialogs-interface.c:464
+msgid "Fixed value"
+msgstr "Valor fixo"
+
+#: src/cssdialogs-interface.c:517 src/cssdialogs-menu.c:982
+#: src/cssdialogs-menu.c:1587
+msgid "Percentage or length"
+msgstr "Porcentaxe ou tamaño"
+
+#: src/cssdialogs-interface.c:525
+msgid "Upper left"
+msgstr "Arriba a esquerda"
+
+#: src/cssdialogs-interface.c:540
+msgid "Lower right"
+msgstr "Abaixo a dereita"
+
+#: src/cssdialogs-interface.c:581
+msgid "Background image"
+msgstr "Imaxe de fondo"
+
+#: src/cssdialogs-interface.c:586
+msgid "Enter uri of image"
+msgstr "Introduzca url ou imaxe"
+
+#: src/cssdialogs-interface.c:604
+msgid "Background repeat"
+msgstr "Repeticón do fondo"
+
+#: src/cssdialogs-interface.c:640
+msgid "Background attachment"
+msgstr "Ajuste do fondo"
+
+#: src/cssdialogs-interface.c:953
+msgid "Border length"
+msgstr "Tamaño do borde"
+
+#: src/cssdialogs-interface.c:1029 src/cssdialogs-interface.c:10142
+msgid "Border style"
+msgstr "Estilo do borde"
+
+#: src/cssdialogs-interface.c:1079 src/cssdialogs-interface.c:10012
+msgid "Border color"
+msgstr "Cor do borde"
+
+#: src/cssdialogs-interface.c:1453 src/cssdialogs-interface.c:8407
+msgid "Top"
+msgstr "Arriba"
+
+#: src/cssdialogs-interface.c:1461 src/cssdialogs-interface.c:8447
+#: src/cssdialogs-interface.c:9381
+msgid "Right"
+msgstr "Dereita"
+
+#: src/cssdialogs-interface.c:1469 src/cssdialogs-interface.c:8497
+msgid "Bottom"
+msgstr "Abaixo"
+
+#: src/cssdialogs-interface.c:1477 src/cssdialogs-interface.c:8549
+msgid "Left"
+msgstr "Esquerda"
+
+#: src/cssdialogs-interface.c:2881 src/cssdialogs-menu.c:1026
+#: src/cssdialogs-menu.c:1695
+msgid "Attribute"
+msgstr "Atributo"
+
+#: src/cssdialogs-interface.c:3030
+msgid "Counter identifier"
+msgstr "Identificador do contador"
+
+#: src/cssdialogs-interface.c:3046
+msgid "String after"
+msgstr "Cadea antes"
+
+#: src/cssdialogs-interface.c:3061
+msgid "String before"
+msgstr "Cadea despois"
+
+#: src/cssdialogs-interface.c:3077 src/cssdialogs-interface.c:5585
+msgid "list style type"
+msgstr "tipo do estilo da lista"
+
+#: src/cssdialogs-interface.c:3381 src/cssdialogs-interface.c:4265
+msgid "Use system fonts"
+msgstr "Usa fontes do sistema"
+
+#: src/cssdialogs-interface.c:3432 src/cssdialogs-interface.c:4315
+msgid "Use typographical notation"
+msgstr "Usa notación tipográfica"
+
+#: src/cssdialogs-interface.c:3454
+msgid "_size"
+msgstr "_tamaño"
+
+#: src/cssdialogs-interface.c:3562
+msgid "line height"
+msgstr "altura de linea"
+
+#: src/cssdialogs-interface.c:3623
+msgid "style"
+msgstr "estilo"
+
+#: src/cssdialogs-interface.c:3734
+msgid "font family"
+msgstr "familia da fonte"
+
+#: src/cssdialogs-interface.c:3832 src/cssdialogs-interface.c:4436
+msgid "generic family"
+msgstr "familia genérica"
+
+#: src/cssdialogs-interface.c:3873
+msgid "use font set"
+msgstr "usa grupo de fontes"
+
+#: src/cssdialogs-interface.c:3917 src/cssdialogs-interface.c:4519
+#: src/cssdialogs-menu.c:698 src/cssdialogs-menu.c:1418
+msgid "Font family"
+msgstr "Familia da fonte"
+
+#: src/cssdialogs-interface.c:3921 src/cssdialogs-interface.c:4523
+msgid "Generic family"
+msgstr "Familia genérica"
+
+#: src/cssdialogs-interface.c:4479
+msgid "Use font set"
+msgstr "Usa grupo de fontes"
+
+#: src/cssdialogs-interface.c:5090 src/cssdialogs-menu.c:1002
+#: src/cssdialogs-menu.c:1647
+msgid "Identifier"
+msgstr "Identificador"
+
+#: src/cssdialogs-interface.c:5557
+msgid "list style position"
+msgstr "posicion do estilo da lista"
+
+#: src/cssdialogs-interface.c:5652
+msgid "list style image (uri)"
+msgstr "image do estilo da lista"
+
+#: src/cssdialogs-interface.c:8149
+msgid "open"
+msgstr "open"
+
+#: src/cssdialogs-interface.c:8165
+msgid "close"
+msgstr "close"
+
+#: src/cssdialogs-interface.c:8211
+msgid "Open quote"
+msgstr "Apertura de comillas"
+
+#: src/cssdialogs-interface.c:8215
+msgid "Close quote"
+msgstr "Peche de comillas"
+
+#: src/cssdialogs-interface.c:8756
+msgid "Width"
+msgstr "Ancho"
+
+#: src/cssdialogs-interface.c:8805
+msgid "Height"
+msgstr "Alto"
+
+#: src/cssdialogs-interface.c:9033
+msgid "Shadow right  ( this field is required )"
+msgstr "Sombra dereita (iste valor e obligatorio)"
+
+#: src/cssdialogs-interface.c:9083
+msgid "Shadow below ( this field is required )"
+msgstr "Sombra abaixo (iste valor e obligatorio)"
+
+#: src/cssdialogs-interface.c:9132 src/cssdialogs-interface.c:9391
+msgid "Blur"
+msgstr "Difuminado"
+
+#: src/cssdialogs-interface.c:9175
+msgid "Use color"
+msgstr "Usa color"
+
+#: src/cssdialogs-interface.c:9323
+msgid "Use shadow list (more than one)"
+msgstr "Usa lista de sombras (mais de unha)"
+
+#: src/cssdialogs-interface.c:9386
+msgid "Below"
+msgstr "Abaixo"
+
+#: src/cssdialogs-interface.c:9396 src/cssdialogs-menu.c:617
+#: src/cssdialogs-menu.c:1395
+msgid "Color"
+msgstr "Cor"
+
+#: src/cssdialogs-interface.c:9643 src/cssdialogs-interface.c:9749
+msgid "Generic voice"
+msgstr "Voz xenerica"
+
+#: src/cssdialogs-interface.c:9676 src/cssdialogs-interface.c:9754
+msgid "Specific voice"
+msgstr "Voz especifica"
+
+#: src/cssdialogs-interface.c:9693
+msgid "Use voice set"
+msgstr "Grupo de voces"
+
+#: src/cssdialogs-interface.c:9929
+msgid "Border width"
+msgstr "Ancho do borde"
+
+#: src/cssdialogs-interface.c:10372
+msgid "Use named color"
+msgstr "Usa cor con nome"
+
+#: src/cssdialogs-interface.c:10495
+msgid "Use color selector"
+msgstr "Usa selector de cor"
+
+#: src/cssdialogs-menu.c:459
+msgid "Properties and values"
+msgstr ""
+
+#: src/cssdialogs-menu.c:466 src/cssdialogs-menu.c:1300
+msgid "Background"
+msgstr ""
+
+#: src/cssdialogs-menu.c:473 src/cssdialogs-menu.c:499
+#: src/cssdialogs-menu.c:517 src/cssdialogs-menu.c:534
+#: src/cssdialogs-menu.c:567 src/cssdialogs-menu.c:599
+#: src/cssdialogs-menu.c:625 src/cssdialogs-menu.c:690
+#: src/cssdialogs-menu.c:706 src/cssdialogs-menu.c:724
+#: src/cssdialogs-menu.c:742 src/cssdialogs-menu.c:766
+#: src/cssdialogs-menu.c:783 src/cssdialogs-menu.c:821
+#: src/cssdialogs-menu.c:855 src/cssdialogs-menu.c:873
+#: src/cssdialogs-menu.c:890 src/cssdialogs-menu.c:906
+#: src/cssdialogs-menu.c:923 src/cssdialogs-menu.c:941
+#: src/cssdialogs-menu.c:958
+msgid "Add value"
+msgstr ""
+
+#: src/cssdialogs-menu.c:476
+msgid "Set the background property's value"
+msgstr ""
+
+#: src/cssdialogs-menu.c:481 src/cssdialogs-menu.c:524
+msgid "Set the width of all borders"
+msgstr ""
+
+#: src/cssdialogs-menu.c:483 src/cssdialogs-menu.c:1321
+msgid "Border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:486
+msgid "Common values for borders"
+msgstr ""
+
+#: src/cssdialogs-menu.c:491
+msgid "Border (all)"
+msgstr ""
+
+#: src/cssdialogs-menu.c:494
+msgid "All values used by the border property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:502
+msgid "Add the value to the border property."
+msgstr ""
+
+#: src/cssdialogs-menu.c:507
+msgid "Set the width, style and color for all borders."
+msgstr ""
+
+#: src/cssdialogs-menu.c:509 src/cssdialogs-menu.c:1334
+msgid "Border width (all)"
+msgstr ""
+
+#: src/cssdialogs-menu.c:512
+msgid "Set border properties or values."
+msgstr ""
+
+#: src/cssdialogs-menu.c:526 src/cssdialogs-menu.c:1346
+msgid "Border width (one)"
+msgstr ""
+
+#: src/cssdialogs-menu.c:529
+msgid "Set width of one border, used by border-width-(top|left|right|bottom)"
+msgstr ""
+
+#: src/cssdialogs-menu.c:537
+msgid "Add just the value"
+msgstr ""
+
+#: src/cssdialogs-menu.c:542
+msgid "Set the border width to the top border."
+msgstr ""
+
+#: src/cssdialogs-menu.c:547
+msgid "Set the border width to the right border."
+msgstr ""
+
+#: src/cssdialogs-menu.c:552
+msgid "Set the border width to the bottom border."
+msgstr ""
+
+#: src/cssdialogs-menu.c:557
+msgid "Set the border width to the left border."
+msgstr ""
+
+#: src/cssdialogs-menu.c:559 src/cssdialogs-menu.c:1359
+msgid "Border width style and color"
+msgstr ""
+
+#: src/cssdialogs-menu.c:562
+msgid "Set the width style and color of one border."
+msgstr ""
+
+#: src/cssdialogs-menu.c:570
+msgid "Add just the value "
+msgstr ""
+
+#: src/cssdialogs-menu.c:575
+msgid "Set the width style and color in the top border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:580
+msgid "Set the width style and color to the right border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:585
+msgid "Set the width style and color to the bottom border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:590
+msgid "Set the width style and color to the left border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:592 src/cssdialogs-menu.c:1370
+msgid "Counter"
+msgstr ""
+
+#: src/cssdialogs-menu.c:602
+msgid "Set the values of the counter property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:611
+msgid "Set the increment of a counter, used by counter-(increment|reset)"
+msgstr ""
+
+#: src/cssdialogs-menu.c:620
+msgid "Set a color"
+msgstr ""
+
+#: src/cssdialogs-menu.c:628
+msgid "Add a color value to an existing property."
+msgstr ""
+
+#: src/cssdialogs-menu.c:633
+msgid "Set the color of the background attachment"
+msgstr ""
+
+#: src/cssdialogs-menu.c:638
+msgid "Set the background's color"
+msgstr ""
+
+#: src/cssdialogs-menu.c:643
+msgid "Set the color of all borders"
+msgstr ""
+
+#: src/cssdialogs-menu.c:648
+msgid "Set the color of the top border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:653
+msgid "Set the color of the right border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:658
+msgid "Set the color of the bottom border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:663
+msgid "Set the color of the left border"
+msgstr ""
+
+#: src/cssdialogs-menu.c:668
+msgid "Set the text color"
+msgstr ""
+
+#: src/cssdialogs-menu.c:673
+msgid "Set the outline color"
+msgstr ""
+
+#: src/cssdialogs-menu.c:675 src/cssdialogs-menu.c:682
+#: src/cssdialogs-menu.c:1407 src/interface.c:1594
+msgid "Font"
+msgstr ""
+
+#: src/cssdialogs-menu.c:685
+msgid "Set the font values, used by font property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:701
+msgid "Set the font's family, used by the font-family property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:709
+msgid "Add the value to an existing font-family property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:714
+msgid "Set the font family"
+msgstr ""
+
+#: src/cssdialogs-menu.c:716 src/cssdialogs-menu.c:1430
+msgid "Font size"
+msgstr ""
+
+#: src/cssdialogs-menu.c:719
+msgid "Set the font size, used by the font-size property."
+msgstr ""
+
+#: src/cssdialogs-menu.c:727
+msgid "Add the value to an existing font-size property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:732
+msgid "Set the font size"
+msgstr ""
+
+#: src/cssdialogs-menu.c:734 src/cssdialogs-menu.c:1442
+msgid "List style"
+msgstr ""
+
+#: src/cssdialogs-menu.c:737
+msgid "Set the list style, used by list-style"
+msgstr ""
+
+#: src/cssdialogs-menu.c:749
+msgid "Set the list style"
+msgstr ""
+
+#: src/cssdialogs-menu.c:751 src/cssdialogs-menu.c:758
+#: src/cssdialogs-menu.c:1454
+msgid "Margin"
+msgstr ""
+
+#: src/cssdialogs-menu.c:761
+msgid "Set the value of all margins, used by margin"
+msgstr ""
+
+#: src/cssdialogs-menu.c:769
+msgid "Add the value to existing margin property."
+msgstr ""
+
+#: src/cssdialogs-menu.c:775 src/cssdialogs-menu.c:1466
+msgid "Margin width"
+msgstr ""
+
+#: src/cssdialogs-menu.c:778
+msgid "Set the width of one margin, used by margin-(top|left|bottom|right)"
+msgstr ""
+
+#: src/cssdialogs-menu.c:786
+msgid "Add the margin width value to an existing margin-width property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:791
+msgid "Set the width for all margins"
+msgstr ""
+
+#: src/cssdialogs-menu.c:796
+msgid "Set the top margin's width."
+msgstr ""
+
+#: src/cssdialogs-menu.c:801
+msgid "Set the right margin's width."
+msgstr ""
+
+#: src/cssdialogs-menu.c:806
+msgid "Set the bottom margin's width."
+msgstr ""
+
+#: src/cssdialogs-menu.c:811
+msgid "Set the left margin's width."
+msgstr ""
+
+#: src/cssdialogs-menu.c:813 src/cssdialogs-menu.c:1479
+msgid "Padding"
+msgstr ""
+
+#: src/cssdialogs-menu.c:816
+msgid "Used by padding-(top|left|bottom|right)"
+msgstr ""
+
+#: src/cssdialogs-menu.c:824
+msgid "on_css_menu_padding_activate"
+msgstr ""
+
+#: src/cssdialogs-menu.c:829
+msgid "Set the padding for all sides."
+msgstr ""
+
+#: src/cssdialogs-menu.c:847 src/cssdialogs-menu.c:1491
+msgid "Pause"
+msgstr ""
+
+#: src/cssdialogs-menu.c:850
+msgid "Set a pause in aural stylesheets"
+msgstr ""
+
+#: src/cssdialogs-menu.c:858
+msgid "Add the value to an existing pause property."
+msgstr ""
+
+#: src/cssdialogs-menu.c:863
+msgid "Add the pause property and value"
+msgstr ""
+
+#: src/cssdialogs-menu.c:865 src/cssdialogs-menu.c:1503
+msgid "Play during"
+msgstr ""
+
+#: src/cssdialogs-menu.c:868
+msgid "Play a sound file"
+msgstr ""
+
+#: src/cssdialogs-menu.c:876
+msgid "Add the value to an existing play-during property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:882 src/cssdialogs-menu.c:1515
+#: src/cssdialogs-menu.c:1526
+msgid "Outline"
+msgstr ""
+
+#: src/cssdialogs-menu.c:885
+msgid "Set the outline value, used by outline"
+msgstr ""
+
+#: src/cssdialogs-menu.c:898
+msgid "Quotes"
+msgstr ""
+
+#: src/cssdialogs-menu.c:901
+msgid "Set the open and closing quotes. Usually used with languages."
+msgstr ""
+
+#: src/cssdialogs-menu.c:909
+msgid ""
+"Add the value to the opening and closing quotes to existing quotes property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:915 src/cssdialogs-menu.c:1539
+msgid "Shape"
+msgstr ""
+
+#: src/cssdialogs-menu.c:918
+msgid "Set the shape's function parameters. Used by the clip property."
+msgstr ""
+
+#: src/cssdialogs-menu.c:926
+msgid "Add the value to an existing clip property."
+msgstr ""
+
+#: src/cssdialogs-menu.c:931
+msgid "Add the clip property's shape value."
+msgstr ""
+
+#: src/cssdialogs-menu.c:933 src/cssdialogs-menu.c:1551
+msgid "Text shadow"
+msgstr ""
+
+#: src/cssdialogs-menu.c:936
+msgid "Set the text's shadow"
+msgstr ""
+
+#: src/cssdialogs-menu.c:944
+msgid "Add the value to an existing text-shadow property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:950 src/cssdialogs-menu.c:1563
+msgid "Voice family"
+msgstr ""
+
+#: src/cssdialogs-menu.c:953
+msgid "Set the voice-family in aural stylesheets for speech systems"
+msgstr ""
+
+#: src/cssdialogs-menu.c:961
+msgid "Add the value to an existing voice-family property"
+msgstr ""
+
+#: src/cssdialogs-menu.c:967
+msgid "Common values"
+msgstr ""
+
+#: src/cssdialogs-menu.c:978 src/cssdialogs-menu.c:1574
+msgid "Percentage"
+msgstr ""
+
+#: src/cssdialogs-menu.c:986 src/cssdialogs-menu.c:1599
+#: src/cssdialogs-menu.c:1611 src/cssdialogs-menu.c:1623
+msgid "Size or length"
+msgstr ""
+
+#: src/cssdialogs-menu.c:990
+msgid "String"
+msgstr ""
+
+#: src/cssdialogs-menu.c:994
+msgid "Number"
+msgstr ""
+
+#: src/cssdialogs-menu.c:998 src/cssdialogs-menu.c:1635
+msgid "Frequency"
+msgstr ""
+
+#: src/cssdialogs-menu.c:1006 src/cssdialogs-menu.c:1659
+msgid "Integer"
+msgstr ""
+
+#: src/cssdialogs-menu.c:1010 src/cssdialogs-menu.c:1671
+msgid "Length"
+msgstr ""
+
+#: src/cssdialogs-menu.c:1014
+msgid "Function values"
+msgstr ""
+
+#: src/cssdialogs-menu.c:1021 src/cssdialogs-menu.c:1682
+msgid "Url"
+msgstr ""
+
+#: src/cssdialogs-menu.c:1024
+msgid ""
+"Set a url, used by various properties as background, background-image and "
+"others"
+msgstr ""
+
+#: src/cssdialogs-menu.c:1029
+msgid ""
+"Set the value of the attr() function, it is only used by content, to add one "
+"tag attribute - as id, or width - to the content header."
+msgstr ""
+
+#: src/cssdialogs-menu.c:1383
+msgid "Counter increment/reset"
+msgstr ""
+
+#. cssed (c) Iago Rubio 2003, 2005 - A tiny CSS editor.
+#. *
+#. *  This program is free software; you can redistribute it and/or modify
+#. *  it under the terms of the GNU General Public License as published by
+#. *  the Free Software Foundation; either version 2 of the License, or
+#. *  (at your option) any later version.
+#. *
+#. *  This program is distributed in the hope that it will be useful,
+#. *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. *  GNU Library General Public License for more details.
+#. *
+#. *  You should have received a copy of the GNU General Public License
+#. *  along with this program; if not, write to the Free Software
+#. *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#.
+#: src/cssdialogs-strings.h:18
+msgid "Use length"
+msgstr "Usa lonxitude"
+
+#: src/cssdialogs-strings.h:19
+msgid "Use percentage or length"
+msgstr "Usa portentaxe ou lonxitude"
+
+#: src/cssdialogs-strings.h:20
+msgid "From color selector"
+msgstr "Dende o selector da cor"
+
+#: src/cssdialogs-strings.h:21
+msgid "Use number"
+msgstr "Usa o número"
+
+#: src/cssedwindow.c:215 src/cssedwindow.c:229
+#, fuzzy, c-format
+msgid "untitled_%d"
+msgstr "Sen nome"
+
+#: src/cssedwindow.c:234
+msgid "Do you want to save this file?"
+msgstr ""
+
+#: src/cssedwindow.c:234
+#, c-format
+msgid "File name: %s"
+msgstr ""
+
+#: src/cssedwindow.c:1265
+msgid "Browser command not set"
+msgstr ""
+
+#: src/cssedwindow.c:1265
+msgid ""
+"You must set the default browser command on the\n"
+"\"Other\" tab in the preferences dialog before to use this command."
+msgstr ""
+
+#: src/cssedwindow.c:1276
+msgid "Internall error while creating browser command"
+msgstr ""
+
+#: src/cssedwindow.c:1276
+msgid ""
+"It may indicate a programming error.\n"
+"Please comunicate it in the cssed-devel list or send a mail to "
+"iagorubio@users.sourceforge.net."
+msgstr ""
+
+#: src/cssedwindow.c:1281
+msgid "Unable to show the browser, command failed."
+msgstr ""
+
+#: src/cssparser.c:128
+msgid "Input style from import found."
+msgstr ""
+
+#: src/cssparser.c:134
+msgid "\tMedia list"
+msgstr ""
+
+#: src/cssparser.c:157
+msgid "\tDefault namespace"
+msgstr ""
+
+#: src/cssparser.c:196
+msgid "parser: Namespace declaration"
+msgstr ""
+
+#: src/cssparser.c:204
+#, c-format
+msgid "\t\tprefix: %s"
+msgstr ""
+
+#: src/cssparser.c:219
+#, c-format
+msgid "\t\turi: %s"
+msgstr ""
+
+#: src/cssparser.c:251
+#, c-format
+msgid "comment -> %s"
+msgstr ""
+
+#: src/cssparser.c:282
+#, c-format
+msgid ""
+"<span color='black'>%s</span>:<span color='dark green'>%d</span>:\n"
+"%s"
+msgstr ""
+
+#: src/cssparser.c:312
+#, c-format
+msgid "%s end"
+msgstr ""
+
+#: src/cssparser.c:348
+#, c-format
+msgid "\t%s: %s"
+msgstr ""
+
+#: src/cssparser.c:356
+#, c-format
+msgid "\tempty property -> %s"
+msgstr ""
+
+#: src/cssparser.c:362
+#, c-format
+msgid "\tempty value -> %s"
+msgstr ""
+
+#: src/cssparser.c:381
+#, fuzzy
+msgid "Start font face"
+msgstr "Principio do documento atopado"
+
+#: src/cssparser.c:394
+#, fuzzy
+msgid "End font face"
+msgstr "Final do documento atopado"
+
+#: src/cssparser.c:409
+#, c-format
+msgid ""
+"<span color='black'>%s</span>:<span color='dark green'>%d</span>:\n"
+"Media"
+msgstr ""
+
+#: src/cssparser.c:426
+msgid "End Media"
+msgstr ""
+
+#: src/cssparser.c:442
+#, c-format
+msgid ""
+"<span color='black'>%s</span>:<span color='dark green'>%d</span>:\n"
+"Page"
+msgstr ""
+
+#: src/cssparser.c:458
+msgid "End Page"
+msgstr ""
+
+#: src/cssparser.c:498
+#, c-format
+msgid "%s:%d: syntax error (%d)"
+msgstr ""
+
+#: src/cssparser.c:509
+msgid "FATAL error"
+msgstr ""
+
+#: src/cssparser.c:623
+msgid "Validation result ok with errors"
+msgstr "Resultado da validación: ben, mais con errores"
+
+#: src/cssparser.c:624
+#, c-format
+msgid ""
+"The CSS document can be parsed, but has syntax errors (%d).\n"
+"Check the program output window."
+msgstr ""
+"O documento CSS pode ser leido mais ten erros (%d).\n"
+"Comproba a fiestra coa saida do programa."
+
+#: src/cssparser.c:627
+msgid "Validation result ok"
+msgstr "Resultado da validación correcto"
+
+#: src/cssparser.c:628
+msgid ""
+"The CSS document is well formed and\n"
+"can be parsed by a browser."
+msgstr ""
+"O documento CSS está ben formado e pode\n"
+"ser leido po-lo navegador."
+
+#: src/cssparser.c:632 src/cssparser.c:639 src/cssparser.c:643
+msgid "Validation fails"
+msgstr "A validación fallou"
+
+#: src/cssparser.c:632 src/cssparser.c:644
+msgid "The CSS document is not well formed"
+msgstr "O documento CSS non está ben formado"
+
+#: src/cssparser.c:640
+msgid ""
+"The validator found an internal error\n"
+"and is unable to continue."
+msgstr ""
+"O validador atopou unha falla interna\n"
+"e non pode continuar."
+
+#: src/doc-scanner.c:159
+msgid "Media"
+msgstr ""
+
+#: src/doc-scanner.c:169
+#, fuzzy
+msgid "Page"
+msgstr "Pegar"
+
+#: src/doc-scanner.c:272 src/doc-scanner.c:275
+msgid "Scanning fails"
+msgstr ""
+
+#: src/doc-scanner.c:272 src/doc-scanner.c:275
+msgid "Cannot scan bad formed document"
+msgstr ""
+
+#: src/document.c:229 src/document-list.c:395 src/document-list.c:420
+#, fuzzy
+msgid "Select file name to save"
+msgstr "Selecciona arquivo"
+
+#: src/document.c:263 src/document.c:363
+msgid "Error while writing to file"
+msgstr "Error escrivindo o arquivo"
+
+#: src/document.c:264 src/document.c:364
+msgid ""
+"There is a mismatch between the file size\n"
+"and the bytes written.\n"
+"The file may be damaged."
+msgstr ""
+"Hay unha diferencia entre o tamaño doe os bytes escritos.\n"
+"O arquivo pode estar dañado."
+
+#: src/document.c:337
+msgid "File exists and will be overwritten"
+msgstr "O arquivo existe e vaise escribir por enriba del"
+
+#: src/document.c:338
+msgid "Do you want to overwrite the existing file with the current one?"
+msgstr "¿ Queres escribir o arquivo actual sobre o arquivo do disco ?"
+
+#: src/document.c:349
+#, c-format
+msgid ""
+"The file %s\n"
+"cannot be opened for writing."
+msgstr ""
+"O arquivo %s\n"
+"non pode abrirse pra escritura"
+
+#: src/document.c:711
+msgid "The file is already opened."
+msgstr ""
+
+#: src/document.c:724 src/document.c:912
+#, fuzzy, c-format
+msgid "File does not exist: %s"
+msgstr "O diálogo non existe"
+
+#: src/document.c:733 src/document.c:921
+#, fuzzy, c-format
+msgid "File is not a regular file: %s"
+msgstr "Non podo abrir %s, non e un archivo regular."
+
+#: src/document.c:743 src/document.c:931
+#, fuzzy, c-format
+msgid "Cannot get information about file: %s"
+msgstr ""
+"Non podo obter información do arquivo\n"
+"%s."
+
+#: src/document.c:758 src/document.c:954
+#, c-format
+msgid "%s"
+msgstr ""
+
+#: src/document.c:764 src/document.c:937
+#, c-format
+msgid "open file: the file '%s' is empty"
+msgstr "abrindo arquivo: o arquivo '%s' està valeiro"
+
+#: src/document.c:773 src/document.c:964
+#, fuzzy, c-format
+msgid "Cannot map file to memory: %s"
+msgstr "Non podo copia-lo arquivo a memória."
+
+#: src/document.c:805
+msgid ""
+"Internal error detected: the system may be running out of memory and could "
+"become unstable.\n"
+"Unable to create new document window.\n"
+"\n"
+"Please save your work and close the application.\n"
+"If you could report this error at http://cssed.sf.net it would be really "
+"appreciated."
+msgstr ""
+
+#: src/document.c:1009
+#, fuzzy
+msgid "File is not saved, do you want to save it?"
+msgstr "O arquivo non está gardado. Quere pecha-lo?"
+
+#: src/document.c:1010
+#, fuzzy
+msgid ""
+"The file has changed and the changes will be lost if you close it. Click "
+"\"Yes\" to save the file before closing it. "
+msgstr ""
+"O arquivo\n"
+"<b>%s</b>\n"
+"foi modificado e os cambio perderanse.\n"
+"Queres garda-lo?\n"
+"\n"
+"Usa <b>\"Cancelar\"</b> pra deixa-lo arquibo aberto.\n"
+
+#: src/document.c:1874
+msgid "End of document reached"
+msgstr "Final do documento atopado"
+
+#: src/document.c:1875
+msgid ""
+"The text cannot be found or end of document reached.\n"
+"\n"
+"If you are sure the text exists, then the document is inactive.\n"
+"Click on a document to make it active"
+msgstr ""
+"O testo non pode ser atopado, ou chegouse o final do documento\n"
+"\n"
+"Se estas seguro de que o texto existe, enton o documento non está activo.\n"
+"Faz click no documento pra activa-lo."
+
+#: src/document.c:1937
+msgid "Start of document reached"
+msgstr "Principio do documento atopado"
+
+#: src/document.c:1938
+msgid ""
+"The text cannot be found or start of document reached.\n"
+"\n"
+"If you are sure the text exists, then the document is inactive.\n"
+"Click on a document to make it active"
+msgstr ""
+"O testo non pode ser atopado, ou chegouse o final do documento\n"
+"\n"
+"Se estas seguro de que o texto existe, enton o documento non está activo.\n"
+"Faz click no documento pra activa-lo."
+
+#. dialog does not exist yet
+#: src/document.c:2945
+#, c-format
+msgid "The dialog %s does not exist."
+msgstr "O diálogo %s non existe."
+
+#: src/document.c:3063
+#, c-format
+msgid "Cannot open %s, is a directory"
+msgstr "Non podo abrir %s, e un directório."
+
+#: src/document.c:3067
+#, c-format
+msgid "Cannot open %s, is not a regular file"
+msgstr "Non podo abrir %s, non e un archivo regular."
+
+#: src/document.c:3075
+#, c-format
+msgid "Cannot open file %s, protocol not supported"
+msgstr "Non podo abrir %s, protocolo non soportado"
+
+#: src/document-list.c:145
+msgid "Doc list file is bogus, no doclist tag at level one"
+msgstr ""
+
+#: src/document-list.c:165
+msgid "Document list file is bogus, too much nested tags (max level 2)"
+msgstr ""
+
+#. err = g_strdup_printf("The parser found error on the document list file\n%s\n\nError code: %d\nCheck the output window for details.", file_to_open, retval);
+#: src/document-list.c:262
+#, fuzzy
+msgid "Error parsing document list file"
+msgstr "Error abrindo o arquivo"
+
+#. err = g_strdup_printf(_("The system was unable to open the file\n%s\n\n%s"), file_to_open, error->message);
+#: src/document-list.c:269
+#, fuzzy
+msgid "Error reading file."
+msgstr "Error abrindo o arquivo"
+
+#: src/document-list.c:269
+#, fuzzy, c-format
+msgid ""
+"The system was unable to open the file\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"Non podo abri-lo arquivo\n"
+"%s\n"
+"pra escribir nel."
+
+#: src/document-list.c:274
+#, fuzzy, c-format
+msgid ""
+"The file does not exist\n"
+"%s"
+msgstr "O diálogo non existe"
+
+#: src/document-list.c:310
+msgid ""
+"<span color='brown'>document list: unnamed document, searching by index.</"
+"span>"
+msgstr ""
+
+#: src/document-list.c:343
+#, c-format
+msgid ""
+"Unable to open the file\n"
+"%s\n"
+"for writing."
+msgstr ""
+"Non podo abri-lo arquivo\n"
+"%s\n"
+"pra escribir nel."
+
+#: src/document-list.c:374 src/document-list.c:869
+#, fuzzy, c-format
+msgid "Document list: %s"
+msgstr "_Lista de Documentos"
+
+#: src/document-list.c:459
+msgid "Select file to add to list"
+msgstr ""
+
+#: src/document-list.c:505
+#, fuzzy
+msgid "Select document list file"
+msgstr "_Lista de Documentos"
+
+#: src/document-list.c:524
+#, fuzzy
+msgid "This document list is not saved"
+msgstr "Iste arquivo non foi gardado"
+
+#: src/document-list.c:524
+msgid ""
+"I'm unable to revert this document list\n"
+"because it have not been saved.\n"
+"\n"
+"Try the \"Save\" button instead"
+msgstr ""
+
+#: src/document-list.c:873
+#, fuzzy
+msgid "Document list"
+msgstr "_Lista de Documentos"
+
+#: src/document-list.c:907 src/plugins-dialog.c:294
+msgid "Name"
+msgstr ""
+
+#: src/document-list.c:915
+#, fuzzy
+msgid "Saved"
+msgstr "Gardar"
+
+#: src/document-list.c:919
+msgid "Index"
+msgstr ""
+
+#: src/document-list.c:975
+msgid "Append list"
+msgstr ""
+
+#. Those are the action area buttons
+#: src/document-list.c:999
+msgid "Reload Current"
+msgstr ""
+
+#: src/gotoline-dialog.c:110
+msgid "Go to line"
+msgstr ""
+
+#: src/interface.c:409 src/interface.c:608
+msgid "Scratch pad"
+msgstr ""
+
+#: src/interface.c:414 src/interface.c:613
+#, fuzzy
+msgid "Copy to"
+msgstr "Copiar"
+
+#: src/interface.c:421 src/interface.c:620
+#, fuzzy
+msgid "Paste from"
+msgstr "Pegar"
+
+#: src/interface.c:458
+msgid "_Select all"
+msgstr "_Seleccioar todo"
+
+#: src/interface.c:462
+msgid "_Edit selected color"
+msgstr ""
+
+#: src/interface.c:488
+msgid "_File"
+msgstr "Arquivo"
+
+#: src/interface.c:508
+#, fuzzy
+msgid "Open path"
+msgstr "Apertura de comillas"
+
+#: src/interface.c:517
+msgid "Close all"
+msgstr "Pechar todo"
+
+#: src/interface.c:544
+msgid "Save all"
+msgstr "Gardar todo"
+
+#: src/interface.c:559
+msgid "_Edit"
+msgstr "_Editar"
+
+#. /////////////// view menu /////////////////////////////////////////////
+#: src/interface.c:664
+msgid "_View"
+msgstr "Ollar"
+
+#: src/interface.c:672
+msgid "_Toolbars"
+msgstr "Barras de ferramentas"
+
+#: src/interface.c:681
+msgid "View main toolbar"
+msgstr "Ver a barra de ferramentas principal"
+
+#: src/interface.c:686
+msgid "View secondary toolbar"
+msgstr "Ver a barra de ferramentas secundária"
+
+#. {
+#. panels
+#: src/interface.c:693
+msgid "_Panels"
+msgstr "_Paneis"
+
+#: src/interface.c:700
+msgid "Show _footer panel"
+msgstr "Ensina-lo panel do pé"
+
+#: src/interface.c:708
+msgid "Hide footer _panel"
+msgstr "Agocha-lo panel do pé"
+
+#: src/interface.c:721
+msgid "_Show side panel"
+msgstr "Ensina-lo panel lateral"
+
+#: src/interface.c:729
+msgid "_Hide side panel"
+msgstr "Agocha-lo panel lateral"
+
+#. /////////////// document menu /////////////////////////////////////////
+#: src/interface.c:758
+msgid "_Document"
+msgstr "_Documento"
+
+#: src/interface.c:767
+msgid "View line _numbers"
+msgstr "Ver numero de liña"
+
+#: src/interface.c:773
+msgid "View line _endings"
+msgstr "Ver finales da liña"
+
+#: src/interface.c:779
+msgid "View white _spaces"
+msgstr "Ver espacios en branco"
+
+#: src/interface.c:785
+msgid "View lines _wrapped"
+msgstr "Ver liñas cortadas"
+
+#: src/interface.c:797
+msgid "Enable _autocompletion"
+msgstr "Activar auto completado"
+
+#: src/interface.c:803
+msgid "Enable _folding"
+msgstr "Activar encarpetado"
+
+#. ~~~~~~~~~~~~~~~~~~~~~~~~~ eols ~~~~~~~~~~~~~~~~~~~~
+#: src/interface.c:815
+msgid "Set EOL _mode"
+msgstr "Axustar o modo de fin de liña"
+
+#: src/interface.c:824
+msgid "Mac (C_R)"
+msgstr "Mac (C_R)"
+
+#: src/interface.c:830
+msgid "Unix (L_F)"
+msgstr "Unix (L_F"
+
+#: src/interface.c:836
+msgid "Dos / Windows (_CR/LF)"
+msgstr "Dos / Windows (_CR/LF)"
+
+#. //////////////////////// Convert EOLS ///////////////////////////////////////
+#: src/interface.c:847
+#, fuzzy
+msgid "Convert E_OLs"
+msgstr "Convertir finais de linea"
+
+#: src/interface.c:855
+msgid "To Mac (C_R)"
+msgstr "A Mac (C_R)"
+
+#: src/interface.c:861
+msgid "To Unix (L_F)"
+msgstr "A Unix (L_F"
+
+#: src/interface.c:867
+msgid "To Dos / Windows (_CR/LF)"
+msgstr "A DOS/Windows (_CR/LF)"
+
+#. ////////   folding /////////////////////////////////
+#: src/interface.c:873
+msgid "Fol_ding"
+msgstr "Encarpetado"
+
+#: src/interface.c:883
+msgid "_Fold all"
+msgstr "Pecahar todas"
+
+#: src/interface.c:889
+msgid "_Unfold all"
+msgstr "Abrir todas"
+
+#: src/interface.c:894
+#, fuzzy
+msgid "File t_ype"
+msgstr "tipo do estilo da lista"
+
+#. //////////////////////////////////////////////////////////
+#. encoding
+#: src/interface.c:922
+msgid "_Force Encoding"
+msgstr "Forzar Codificación"
+
+#: src/interface.c:932
+msgid "_Default"
+msgstr "Por defecto"
+
+#. charset
+#: src/interface.c:949
+#, fuzzy
+msgid "Charac_ter set"
+msgstr "Xogo de _caracteres"
+
+#: src/interface.c:956
+msgid "_ANSI"
+msgstr "_ANSI"
+
+#: src/interface.c:960
+msgid "_East Europe"
+msgstr "_Europa (Este)"
+
+#: src/interface.c:964
+msgid "_GB 2312"
+msgstr "_GB 2312"
+
+#: src/interface.c:968
+msgid "_Hangul"
+msgstr "_Hangul"
+
+#: src/interface.c:972
+msgid "_Shift JIS"
+msgstr "_Shift JIS"
+
+#. Add menu Split view -> Hor, Ver, --, Unsplit
+#: src/interface.c:979
+msgid "Split View"
+msgstr ""
+
+#: src/interface.c:989
+msgid "_Horizontally"
+msgstr ""
+
+#: src/interface.c:995
+msgid "_Vertically"
+msgstr ""
+
+#: src/interface.c:1007
+#, fuzzy
+msgid "Unsplit"
+msgstr "Unidade"
+
+#: src/interface.c:1022
+msgid "_Change font"
+msgstr "Cambia a fonte"
+
+#: src/interface.c:1029
+#, fuzzy
+msgid "Tab back_ground colour"
+msgstr "Cor do fondo"
+
+#: src/interface.c:1037
+msgid "Revert to original _colour"
+msgstr ""
+
+#: src/interface.c:1048
+msgid "<span background='red'>   </span> Red"
+msgstr "<span background='red'>   </span> Vermello"
+
+#: src/interface.c:1054
+msgid "<span foreground='black' background='white'>   </span> White"
+msgstr "<span foreground='black' background='white'>   </span> Branco"
+
+#: src/interface.c:1060
+msgid "<span foreground='white' background='blue'>   </span> Blue"
+msgstr "<span foreground='white' background='blue'>   </span> Azul"
+
+#: src/interface.c:1066
+msgid "<span foreground='black' background='yellow'>   </span> Yellow"
+msgstr "<span foreground='black' background='yellow'>   </span> Amarelo"
+
+#: src/interface.c:1072
+msgid "<span foreground='black' background='green'>   </span> Green"
+msgstr "<span foreground='black' background='green'>   </span> Verde"
+
+#: src/interface.c:1082
+msgid "G_o To"
+msgstr ""
+
+#: src/interface.c:1090
+#, fuzzy
+msgid "_Start of document"
+msgstr "Principio do documento atopado"
+
+#: src/interface.c:1095
+#, fuzzy
+msgid "_End of document"
+msgstr "Final do documento atopado"
+
+#: src/interface.c:1100
+#, fuzzy
+msgid "_Line Number"
+msgstr "número"
+
+#. ////////////  CSS dialogs menu created  in //////
+#. ////////////  cssdialogs-menu.c /////////////////
+#: src/interface.c:1106
+msgid "_CSS"
+msgstr "_CSS"
+
+#: src/interface.c:1109
+msgid "Dialogs"
+msgstr "Diálogos"
+
+#: src/interface.c:1126
+msgid "_Selector wizard"
+msgstr "Asistente de _selector"
+
+#: src/interface.c:1134
+msgid "_Color wizard"
+msgstr "Asistente de _color"
+
+#: src/interface.c:1142
+msgid "_Box properties wizard"
+msgstr "Asistente de propiedades da caixa"
+
+#: src/interface.c:1156
+msgid "_Validate and dump"
+msgstr "_Validar e volcar"
+
+#: src/interface.c:1163
+msgid "Validate _only"
+msgstr "Validar"
+
+#: src/interface.c:1171
+msgid "_Scan selector"
+msgstr "E_scanear selector"
+
+#. ////////////////////////// Utils //////////////////////////////
+#: src/interface.c:1184
+msgid "_Tools"
+msgstr "Ferramentas"
+
+#: src/interface.c:1192
+msgid "_Doc Info"
+msgstr "Información do _documento"
+
+#: src/interface.c:1200
+msgid "Show _autocompletion"
+msgstr "Mostrar _auto completado"
+
+#: src/interface.c:1205
+msgid "_Clean program output"
+msgstr "Limpar a saida do programa"
+
+#: src/interface.c:1220
+msgid "Document _list"
+msgstr "_Lista de Documentos"
+
+#: src/interface.c:1227
+#, fuzzy
+msgid "_Opened documents"
+msgstr "_Documento"
+
+#: src/interface.c:1231
+msgid "Open from _file"
+msgstr ""
+
+#: src/interface.c:1235
+#, fuzzy
+msgid "_Blank document list"
+msgstr "_Lista de Documentos"
+
+#: src/interface.c:1241
+msgid "_Plugins"
+msgstr "_Plugins"
+
+#: src/interface.c:1249
+msgid "_View plugins"
+msgstr "_Ver os plugins"
+
+#. help menu ///////////////////////////////////////////////////////////////
+#: src/interface.c:1264
+msgid "_Help"
+msgstr "_Axuda"
+
+#. For future use, don't delete me please ;-)
+#: src/interface.c:1273
+#, fuzzy
+msgid "Cssed _help"
+msgstr "Sitio _web do cssed"
+
+#: src/interface.c:1277
+msgid "_About"
+msgstr "_Sobre"
+
+#: src/interface.c:1288
+msgid "Cssed _web site"
+msgstr "Sitio _web do cssed"
+
+#: src/interface.c:1296 src/interface.c:1335
+msgid "With _Safari"
+msgstr ""
+
+#: src/interface.c:1300 src/interface.c:1339
+msgid "With _Firefox"
+msgstr ""
+
+#: src/interface.c:1311 src/interface.c:1350
+msgid "With _Mozilla"
+msgstr ""
+
+#: src/interface.c:1315 src/interface.c:1354
+msgid "With G_aleon"
+msgstr ""
+
+#: src/interface.c:1319 src/interface.c:1358
+msgid "With _Dillo"
+msgstr ""
+
+#: src/interface.c:1323 src/interface.c:1362
+msgid "With _Gnome"
+msgstr ""
+
+#: src/interface.c:1327
+msgid "Cssed _documentation on line"
+msgstr ""
+
+#: src/interface.c:1375
+msgid "New"
+msgstr "Novo"
+
+#: src/interface.c:1381
+msgid "Open..."
+msgstr "Abrir..."
+
+#: src/interface.c:1387
+msgid "Save"
+msgstr "Gardar"
+
+#: src/interface.c:1394
+msgid "Save As..."
+msgstr "Gardar como ..."
+
+#: src/interface.c:1400
+msgid "Close"
+msgstr "Pechar"
+
+#: src/interface.c:1408
+msgid "Cut"
+msgstr "Cortar"
+
+#: src/interface.c:1414
+msgid "Copy"
+msgstr "Copiar"
+
+#: src/interface.c:1420
+msgid "Paste"
+msgstr "Pegar"
+
+#: src/interface.c:1428
+msgid "Find..."
+msgstr "Atopar ..."
+
+#: src/interface.c:1434
+msgid "Replace..."
+msgstr "Reemplazar ..."
+
+#: src/interface.c:1442
+msgid "Undo"
+msgstr "Desfacer"
+
+#: src/interface.c:1448
+msgid "Redo"
+msgstr "Refacer"
+
+#: src/interface.c:1457
+msgid "Previous Bookmark"
+msgstr "Marcador anterior"
+
+#: src/interface.c:1463
+msgid "Next Bookmark"
+msgstr "Próximo marcador"
+
+#: src/interface.c:1492 src/interface.c:1493
+msgid "Hide sidebar"
+msgstr "Agochar panel lateral"
+
+#: src/interface.c:1494
+msgid "Hide the right sidebar"
+msgstr "Agocha-lo panel da dereita"
+
+#: src/interface.c:1503 src/interface.c:1504
+msgid "Show sidebar"
+msgstr "Mostra-lo panel lateral"
+
+#: src/interface.c:1505
+msgid "Show the right sidebar"
+msgstr "Mostra-lo panel da dereita"
+
+#: src/interface.c:1514 src/interface.c:1515
+msgid "Hide footer"
+msgstr "Agocha-lo pé"
+
+#: src/interface.c:1516
+msgid "Hide the footer panel"
+msgstr "Agocha-lo panel do pé"
+
+#: src/interface.c:1525 src/interface.c:1526
+msgid "Show footer"
+msgstr "Ensina-lo pé"
+
+#: src/interface.c:1527
+msgid "Show the footer panel"
+msgstr "Ensina-lo panel do pé"
+
+#: src/interface.c:1548
+msgid "Margin all"
+msgstr "Toda-los marxes"
+
+#: src/interface.c:1549 src/interface.c:1550
+msgid "Show the margin all dialog"
+msgstr "Mostra-lo diálogo pra toda-los marxes"
+
+#: src/interface.c:1559
+msgid "Border all"
+msgstr "Todo-los bordes"
+
+#: src/interface.c:1560 src/interface.c:1561
+msgid "Show the border all dialog"
+msgstr "Mostra-lo dialogo pra todo-los bordes"
+
+#: src/interface.c:1570
+msgid "Padding all"
+msgstr ""
+
+#: src/interface.c:1571 src/interface.c:1572
+msgid "Show the padding all dialog"
+msgstr ""
+
+#: src/interface.c:1581
+msgid "Box properties wizard"
+msgstr ""
+
+#: src/interface.c:1582 src/interface.c:1583
+msgid "Show the box properties wizard"
+msgstr ""
+
+#: src/interface.c:1595 src/interface.c:1596
+msgid "Show the font dialog"
+msgstr ""
+
+#: src/interface.c:1604
+msgid "Choose Color"
+msgstr ""
+
+#: src/interface.c:1613 src/selector-wizard.c:293
+msgid "Selector wizard"
+msgstr ""
+
+#: src/interface.c:1614 src/interface.c:1615
+msgid "Show the Selector wizard"
+msgstr ""
+
+#: src/interface.c:1625 src/interface.c:1626
+msgid "Show the Color wizard"
+msgstr ""
+
+#: src/interface.c:1637
+msgid "Scan selector"
+msgstr ""
+
+#: src/interface.c:1638 src/interface.c:1639
+msgid "Scan the current selector to be shown in the side panel"
+msgstr ""
+
+#: src/interface.c:1648
+msgid "Document info"
+msgstr ""
+
+#: src/interface.c:1649 src/interface.c:1650
+msgid "Show information about the current document"
+msgstr ""
+
+#: src/interface.c:1658
+msgid "Clean program output"
+msgstr ""
+
+#: src/interface.c:1667
+msgid "Validate"
+msgstr ""
+
+#: src/interface.c:1668 src/interface.c:1669
+msgid "Validate current document"
+msgstr ""
+
+#: src/interface.c:1678
+msgid "Validate and dump"
+msgstr ""
+
+#: src/interface.c:1679 src/interface.c:1680
+msgid "Validate and dump current document"
+msgstr ""
+
+#: src/interface.c:1771
+#, fuzzy
+msgid "Style"
+msgstr "Estilo"
+
+#: src/interface.c:1773
+msgid "Line"
+msgstr ""
+
+#: src/interface.c:1775 src/plugins-dialog.c:290
+msgid "File"
+msgstr ""
+
+#: src/interface.c:1824
+msgid "Parse document"
+msgstr ""
+
+#: src/interface.c:1827
+msgid "Parse and append"
+msgstr ""
+
+#: src/interface.c:1869
+msgid "Digest"
+msgstr ""
+
+#: src/interface.c:1884
+msgid "Property"
+msgstr ""
+
+#: src/interface.c:1893
+msgid "Value"
+msgstr ""
+
+#: src/interface.c:1997
+msgid "Scratch Pad / Static Pad"
+msgstr ""
+
+#: src/interface.c:2000 src/interface.c:2005
+msgid ""
+"Those buffers are for notes or drag and drop.\n"
+"The first one is the drag & drop buffer to be\n"
+"used as a second clipboard or a drag & drop target.\n"
+"The second one will save the text between sessions so it canbe used for notes"
+msgstr ""
+
+#. //////////////////////////////////////////////////////////
+#: src/interface.c:2018
+msgid "Program output"
+msgstr ""
+
+#: src/interface.c:2073
+msgid "Terminal"
+msgstr ""
+
+#: src/interface.c:2761
+msgid "About cssed"
+msgstr ""
+
+#: src/interface.c:2791
+msgid "<span weight='bold' size='large'><u>Author</u></span>"
+msgstr ""
+
+#: src/interface.c:2817
+msgid "Author"
+msgstr ""
+
+#: src/interface.c:2853
+msgid "Developers"
+msgstr ""
+
+#. translator: put here your name, in your language.po file
+#: src/interface.c:2863
+msgid ""
+"This is the default language.\n"
+"No translation is being used."
+msgstr ""
+
+#: src/interface.c:2869
+msgid "Translator"
+msgstr ""
+
+#: src/interface.c:2930
+msgid "Search"
+msgstr ""
+
+#: src/interface.c:2947
+msgid "Text to find"
+msgstr ""
+
+#: src/interface.c:2965
+msgid "_Regular expression"
+msgstr ""
+
+#: src/interface.c:2972
+msgid "P_erl regexp"
+msgstr ""
+
+#: src/interface.c:2984
+msgid "P_osix regexp"
+msgstr ""
+
+#: src/interface.c:2996
+msgid "_Match case"
+msgstr ""
+
+#: src/interface.c:3003
+msgid "_Whole world only"
+msgstr ""
+
+#: src/interface.c:3010
+msgid "Word _start"
+msgstr ""
+
+#: src/interface.c:3042 src/interface.c:3255
+msgid "Search _backwards"
+msgstr ""
+
+#: src/interface.c:3119
+msgid "Replace"
+msgstr ""
+
+#: src/interface.c:3137
+msgid "Search for   "
+msgstr ""
+
+#: src/interface.c:3150
+msgid "Replace with"
+msgstr ""
+
+#: src/interface.c:3171
+msgid "Regular expression"
+msgstr ""
+
+#: src/interface.c:3178
+msgid "Perl regex"
+msgstr ""
+
+#: src/interface.c:3190
+msgid "Posix regex"
+msgstr ""
+
+#: src/interface.c:3203
+msgid "Match case"
+msgstr ""
+
+#: src/interface.c:3210
+msgid "Whole world only"
+msgstr ""
+
+#: src/interface.c:3217
+msgid "Word start"
+msgstr ""
+
+#: src/plugin.c:84 src/plugin.c:92 src/plugin.c:102 src/plugin.c:126
+msgid "Cannot load plugin"
+msgstr ""
+
+#: src/plugin.c:84
+#, fuzzy, c-format
+msgid ""
+"Cannot open module \"%s\"\n"
+"\n"
+"%s\n"
+msgstr "Non podo abri-lo arquivo"
+
+#: src/plugin.c:92
+#, c-format
+msgid ""
+"Error while loading \"%s\"\n"
+"\n"
+"%s\n"
+msgstr ""
+
+#: src/plugin.c:102
+#, fuzzy, c-format
+msgid "Error while initializing: \"%s\"\n"
+msgstr "Error escrivindo o arquivo"
+
+#: src/plugin.c:126
+msgid "The plugin returned an internal error"
+msgstr ""
+
+#: src/plugin.c:151
+msgid "Unable to unload"
+msgstr ""
+
+#: src/plugin.c:152
+msgid "Cannot unload the plugin"
+msgstr ""
+
+#. errmsg = g_strdup_printf (_("Plugin is loaded\n%s\n\nPlease click Refresh if the dialog shows inaccurate values"),
+#. path);
+#: src/plugins-dialog.c:156
+msgid "Plugin loaded"
+msgstr ""
+
+#: src/plugins-dialog.c:156
+#, c-format
+msgid ""
+"Plugin is loaded\n"
+"%s\n"
+"\n"
+"Please click Refresh if the dialog shows inaccurate values"
+msgstr ""
+
+#. errmsg = g_strdup_printf (_("Plugin is not loaded\n%s\n\nPlease click Refresh if the dialog shows false values"), path);
+#: src/plugins-dialog.c:211
+msgid "Not loaded"
+msgstr ""
+
+#: src/plugins-dialog.c:211
+#, c-format
+msgid ""
+"Plugin is not loaded\n"
+"%s\n"
+"\n"
+"Please click Refresh if the dialog shows false values"
+msgstr ""
+
+#: src/plugins-dialog.c:259
+#, fuzzy
+msgid "Plugins dialog"
+msgstr "_Plugins"
+
+#: src/plugins-dialog.c:298
+msgid "Description"
+msgstr ""
+
+#: src/plugins-dialog.c:302
+msgid "Loaded"
+msgstr ""
+
+#: src/plugins-dialog.c:346
+msgid "Load"
+msgstr ""
+
+#: src/plugins-dialog.c:368
+msgid "Unload"
+msgstr ""
+
+#. change it to a document function
+#: src/sciwrappers.c:247
+msgid "Undo limit reached"
+msgstr "Limite de desfacer alcanzado"
+
+#: src/sciwrappers.c:248
+msgid "There is no action in the undo list."
+msgstr "No hay accions na lista de defacer"
+
+#. change it to a document function
+#: src/sciwrappers.c:258
+msgid "Redo limit reached"
+msgstr "Limite de refacer alcanzado"
+
+#: src/sciwrappers.c:259
+msgid "There is no action in the redo list."
+msgstr "Non hay accions na lista de refacer"
+
+#: src/selectorparser.c:219
+msgid "special character found where must be an identifier. Stop scanning .."
+msgstr ""
+
+#: src/selectorparser.c:223
+msgid "number found where must be an identifier. Stop scanning .."
+msgstr ""
+
+#: src/selectorparser.c:226
+msgid "quoted strings are not valid identifiers. Stop scanning .."
+msgstr ""
+
+#: src/selectorparser.c:231
+msgid "sentence separator found but no property identifier. Stop scanning .."
+msgstr ""
+
+#: src/selectorparser.c:234
+msgid "end of sentence found but no identifier. Stop scanning .."
+msgstr ""
+
+#: src/selectorparser.c:237
+msgid "bad property is not a valid identifier. Stop scanning .."
+msgstr ""
+
+#: src/selectorparser.c:253
+msgid "bad declaration separator, must be \":\""
+msgstr ""
+
+#: src/selectorparser.c:284
+msgid "opening curly braces are not allowed into a selector"
+msgstr ""
+
+#: src/selectorparser.c:288
+msgid "closing curly braces are not allowed into a selector"
+msgstr ""
+
+#: src/selectorparser.c:298
+msgid "equal sign not allowed into a selector"
+msgstr ""
+
+#: src/selectorparser.c:360
+msgid "error, more than one sentence separator into one sentence"
+msgstr ""
+
+#: src/selectorparser.c:380
+#, c-format
+msgid "invalid token type (%d). Ignoring."
+msgstr ""
+
+#: src/selectorparser.c:459
+#, c-format
+msgid "%s:%d - selector scanner: %s"
+msgstr ""
+
+#: src/selectorparser.c:462
+#, c-format
+msgid "[%d] - selector scanner: %s"
+msgstr ""
+
+#: src/selector-wizard.c:322
+msgid "Selector"
+msgstr ""
+
+#: src/selector-wizard.c:327
+msgid "Child"
+msgstr ""
+
+#: src/selector-wizard.c:332
+msgid "Class"
+msgstr ""
+
+#: src/selector-wizard.c:337
+msgid "Sibling"
+msgstr ""
+
+#: src/selector-wizard.c:342
+msgid "Contextual"
+msgstr ""
+
+#: src/selector-wizard.c:352
+msgid "Declarations:"
+msgstr ""
+
+#: src/selector-wizard.c:360
+msgid "One for each"
+msgstr ""
+
+#: src/selector-wizard.c:371
+msgid "One for all"
+msgstr ""
+
+#: src/selector-wizard.c:397
+msgid "<span size='larger'>Single Selector</span>"
+msgstr ""
+
+#: src/selector-wizard.c:407
+msgid ""
+"<span size='small'>This style will be applied to all tags that match the "
+"selector.</span>"
+msgstr ""
+
+#: src/selector-wizard.c:510
+msgid "<span size='larger'>Child selectors</span>"
+msgstr ""
+
+#: src/selector-wizard.c:520
+msgid ""
+"<span size='small'>This style will be applied to all tags with a matching "
+"parent. <i>p &gt; u { style }</i>, will be applied to all <i>u</i> tags with "
+"a <i>p</i> parent</span>"
+msgstr ""
+
+#: src/selector-wizard.c:639
+msgid "<span size='large'>Class</span>"
+msgstr ""
+
+#: src/selector-wizard.c:649
+msgid ""
+"<span size='small'>This style will be applied to all tag matching the "
+"selector with a class attribute that matches. The tag <i>&lt;p class=&quot;"
+"test&quot;&gt;</i> will match the class <i>p.test</i></span>."
+msgstr ""
+
+#: src/selector-wizard.c:751
+msgid "<span size='larger'>Sibling selectors</span>"
+msgstr ""
+
+#: src/selector-wizard.c:761
+msgid ""
+"<span size='small'>This style will be applied to any tag preceding other tag "
+"with the same parent. <i>p + u { style }</i>, will be applied to all <i>u</"
+"i> tags preceded by a <i>p</i> tag with the same parent</span>"
+msgstr ""
+
+#: src/selector-wizard.c:879
+msgid "<span size='larger'>Contextual selectors</span>"
+msgstr ""
+
+#: src/selector-wizard.c:889
+msgid ""
+"<span size='small'>This style will be applied to all tags with a specific "
+"ancestor. <i>p  u { style }</i>, will be applied to all <i>u</i> tags within "
+"a <i>p</i> tag.</span>"
+msgstr ""
+
+#: src/support.c:117
+msgid "Could not create pixmap"
+msgstr ""
+
+#: src/support.c:131
+msgid "Could not create pixbuf"
+msgstr ""
+
+#: src/utils.c:354
+msgid ""
+"<span size='larger'><b>There are documents not saved.  Changes will be lost."
+"</b></span>"
+msgstr ""
+
+#: src/utils.c:360
+msgid ""
+"<span>Please choose an action to be taken:\n"
+"\n"
+"\t<b>\"Save all\"</b> - will save all unsaved files.\n"
+"\t<b>\"Choose files\"</b> - will ask you to save each file.\n"
+"\t<b>\"Don't save\"</b> - will close cssed without saving any file.\n"
+"\t<b>\"Cancel\"</b> - will close this dialog but won't close cssed.</span>\n"
+msgstr ""
+
+#: src/utils.c:371
+msgid "_Save all"
+msgstr ""
+
+#: src/utils.c:376
+msgid "_Choose files"
+msgstr ""
+
+#: src/utils.c:381
+msgid "_Don't save"
+msgstr ""
+
+#: src/utils.c:663 src/utils.c:750 src/utils.c:776
+msgid "Cannot write to configuration file"
+msgstr "Non podo abri-lo arquivo de configuración"
+
+#: src/utils.c:664 src/utils.c:751 src/utils.c:777
+msgid ""
+"I'm unable to write to the configuration file,\n"
+"settings will not be saved."
+msgstr ""
+
+#: src/xmlparser.c:156
+#, fuzzy
+msgid "XML definition file does not exists"
+msgstr "O diálogo non existe"
+
+#: src/xmlparser.c:156
+#, c-format
+msgid ""
+"The definition file does not exists.\n"
+"%s\n"
+"\n"
+"The CSS tree and CSS highlighting and auto completion will fail.\n"
+" Try to put a definition file in the .cssed directory in your home dir."
+msgstr ""
+
+#: src/xmlparser.c:168
+#, c-format
+msgid ""
+"The parser found error on the xml file\n"
+"%s\n"
+"\n"
+"Error code: %d\n"
+"Check the output window for details."
+msgstr ""
+
+#: src/xmlparser.c:230
+#, c-format
+msgid ""
+"<span color='brown'>* Bad XML definition file depth %d at element \"%s\". "
+"Max depth must be 3.</span>"
+msgstr ""
+
+#, fuzzy
+#~ msgid "File does not exists or is not a regular file"
+#~ msgstr ""
+#~ "Arquivo %s\n"
+#~ "non existe ou non e un arquivo regular"

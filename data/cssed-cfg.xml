@@ -1,0 +1,41 @@
+<cssed-conf>
+	  <document>
+		 <linenumbers show="true" />
+		 <autocompletion enabled="true" />
+		 <lineendings show="false" /> 
+		 <whitespaces show="false" /> 
+		 <folding enabled="true" /> 
+		 <lineswraped show="false" />
+	 	 <font name="!Luxi Mono" size="10" />
+	 </document>
+	  <window x="200" y="100" width="400" height="300">
+		  <notebook height="200" />
+		<sidebar width="300" />
+		<treeview height="100" />
+	</window>
+	<highlighting> 
+		<style name="DEFAULT" fore="0x993300" back="0xffffff" bold="false"	/>
+		 <style name="TAG" fore="0xa46621" back="0xffffff" bold="true" />
+		 <style name="PSEUDOCLASS" fore="0x990066" back="0xffffff" bold="false" />
+		 <style name="UNKNOWN_PSEUDOCLASS" fore="0x00ff" back="0xffffff" bold="false" />
+		 <style name="OPERATOR" fore="0x21548b" back="0xffffff" bold="false" />
+		 <style name="IDENTIFIER" fore="0x692926" back="0xffffff" bold="true" />
+		 <style name="UNKNOWN_IDENTIFIER" fore="0x00ff" back="0xffffff" bold="false" />
+		 <style name="VALUE" fore="0x222222" back="0xffffff" bold="false" />
+		 <style name="COMMENT" fore="0x666666" back="0xdbfaff" bold="false" />
+		 <style name="IMPORTANT" fore="0x0099" back="0xffffff" bold="true" />
+		 <style name="DIRECTIVE" fore="0x660066" back="0xffffff" bold="false" />
+		 <style name="DOUBLESTRING" fore="0x660033" back="0xffffff" bold="false" />
+		 <style name="SINGLESTRING" fore="0x660033" back="0xffffff" bold="false" />
+		 <style name="CLASS" fore="0x4400" back="0xffffff" bold="true" />
+		 <style name="ID" fore="0x4400" back="0xffffff" bold="true" />
+		 <style name="VALID_VALUE" fore="0x284e66" back="0xffffff" bold="true" />
+		 <style name="FUNCTION" fore="0x993300" back="0xffffff" bold="false" />
+		 <style name="NUMBER" fore="0x7b207f" back="0xffffff" bold="false" />
+		 <style name="UNIT" fore="0x9b671e" back="0xffffff" bold="false" />
+		 <style name="COLOR" fore="0x6600" back="0xffffff" bold="false" />
+		 <style name="HEXACOLOR" fore="0x6600" back="0xffffff" bold="false" />
+		 <style name="ATTR_MATCH" fore="0x4444" back="0xffffff" bold="false" />
+		 <style name="LANGUAGE" fore="0x990000" back="0xffffff" bold="false" />
+	</highlighting>
+</cssed-conf>

@@ -1,0 +1,133 @@
+2005-03-01  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* src/callbacks.c
+	Changed string to conform to HUI (ellipsis)
+
+	* src/cssedwindow.c
+	Added conditional for include
+
+	* src/document.c
+	Corrected misspelling
+
+2005-02-18  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* src/cssedwindow.h, src/plugin.h, src/document.h
+	Integrated comments for the plugindoc-plugin
+
+	* src/interface.h
+	
+	Changed accelerator for highlighting Plain text, so that it does
+	not conflict with C/CPP
+
+2005-02-17  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* src/cssdialogs-class.h
+	
+	Integrated comments for the plugindoc-plugin, to avoid reinvent
+	the wheel each time the header is changed
+
+2005-02-17  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* src/interface.c
+	
+	Added an accelerator to Convert EOLs, to avoid chocking with 
+	items in the main submenu
+
+2005-02-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* src/interface.c
+	
+	Moved documentlist to view menu
+	Changed some menu items (Flag, clear flag)
+
+2005-02-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* src/callbacks.c
+	
+	Added conditional for DARWIN for tab background colour
+	
+	* src/document-list.c
+	
+	Corrected misspelling
+	
+	* src/interface_c
+	
+	Corrected my email, so that it be the same everywhere
+
+2004-09-27  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* src/callbacks.c
+	
+	Remove printf for checking ifdef darwin (was for personal debugging)
+	
+	* src/cssedwindow.c, src/document.c, xmlparser.c
+	
+	Correct misspelling in comments and strings
+
+2004-09-20  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* src/interface.c
+	
+	Change the terminal size so that the whole window fits in 800x600
+
+2004-09-20  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* src/callbacks.c, src/callbacks.c, interface.c, main.c
+	
+	Changes to allow help menus
+
+2004-09-13  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* src/css-dialogs-menu.c
+	
+	Corrected wrong string for color-border-right
+
+2004-09-11  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* src/callbacks.c, src/document.c
+	
+	Correcting misspelling, capitalization of first letter, removed
+	spaces before punctuation marks in English strings.
+
+2004-09-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* src/interface.c
+	
+	Oops corrected lost width
+
+2004-09-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* src/interface.c
+	
+	Correcting misspelling in dedication
+
+2004-09-08  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* src/callbacks.c, src/color-wizard.c, src/configparser.c,
+	src/cssdialogs-callbacks.c, cssdialogs-functions.c,
+	src/cssedparser.c, src/doc-scanner.c, src/document.c, src/plugin.c,
+	src/selector-wizard.c, src/support.c, src/utils.c, src/xmlparser.c
+	
+	Changed the strings to be translated to improve English wording
+
+	* src/interface.c
+	
+	Changed the strings to be translated first to have first letter 
+	capitalized in scanner panel, second to correct my firstname in
+	about box
+
+	* src/cssdialogs-menu.c
+	
+	Changed the strings to be translated first to debug color-border-xx
+	tooltips, second to improve English wording
+
+	* src/plugins-dialog.c
+	
+	Changed the strings to be translated first to comply with the GUI
+	(button refresh), second to have first letter capitalized, third to
+	improve English wording
+	
+	* src/ChangeLog
+	
+	Added a ChangeLog to track the changes in src directory
+	

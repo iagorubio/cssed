@@ -1,0 +1,428 @@
+# CSSED a CSS Editor
+# configure.in - Process this file with autoconf to produce a ./configure script.
+# Copyright (C) 2003 Iago Rubio
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(cssed, 0.4.1)
+AM_CONFIG_HEADER(config.h)
+AM_MAINTAINER_MODE
+dnl AM_ICONV() # not needed
+
+dnl Check for programs
+AC_PROG_CXX
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_AWK
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+AC_CANONICAL_HOST
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_STDBOOL
+AC_C_CONST
+AC_C_INLINE
+AC_TYPE_SIZE_T
+
+dnl AM_PROG_LIBTOOL
+
+dnl Languages 
+dnl =========
+ALL_LINGUAS="es fr gl it de ca cs"
+AM_GLIB_GNU_GETTEXT
+
+dnl sets PREFIX for *.in files
+dnl ==========================
+AC_MSG_CHECKING( if prefix is set )
+if test "${prefix}" = "NONE"; then
+	echo "no, setting default prefix /usr"
+	prefix="/usr";
+else
+	echo ${prefix}
+fi
+PACKAGE_PREFIX=${prefix}
+AC_SUBST(PACKAGE_PREFIX)
+
+
+dnl ************************
+dnl Checks for OS type
+dnl ************************
+case "${host}" in
+i[[3456]]86-*-linux-gnu*) 
+	OSTYPE="LINUX"
+	;;
+*-*-cygwin*)
+	OSTYPE="CYGWIN"
+	;;
+*-apple-darwin*)
+	OSTYPE="DARWIN"
+	;; 
+i[[3456]]86-*-*bsd*)
+	OSTYPE="BSD"
+	;; 
+esac
+
+dnl ************************
+dnl Checks for librarries
+dnl ************************
+
+AC_PATH_PROG(PKG_CONFIG, pkg-config, no)
+if test "x$PKG_CONFIG" = "xno" ; then
+	if test "x$OSTYPE" = "xDARWIN";then
+		AC_MSG_CHECKING(if pkg-config is in ${prefix}/bin)
+		if test -x ${prefix}/bin/pkg-config; then
+			echo "yes"			
+			 AC_MSG_ERROR(pkg-config exist but out of the PATH. Please add ${prefix}/bin to your PATH environment variable. PATH=$PATH:${prefix}/bin)			
+		else
+			AC_MSG_ERROR(pkg-config not found please install pkg-config or ensure that it is in a directory included in your PATH. You can also set the PKG_CONFIG environment variable)
+		fi
+	else
+		AC_MSG_ERROR(pkg-config not found please install pkg-config or ensure that it is in a directory included in your PATH)
+	fi
+fi
+
+echo -n "checking for gtk+-2.0... "
+if pkg-config --exists gtk+-2.0 ; then
+	echo "yes"
+	pkg_modules="gtk+-2.0 >= 2.0.0"
+else
+	echo "no"
+	AC_MSG_ERROR(gtk2.0 development library not, found please install it)
+fi
+
+echo -n "checking for gthread-2.0... "
+if pkg-config --exists gthread-2.0 ; then
+	echo "yes"
+pkg_modules="$pkg_modules gthread-2.0"
+else
+	echo "no"
+	AC_MSG_ERROR(gthread-2.0 not found please install the glib2 development package)
+fi
+
+echo -n "checking for libxml-2.0 ... "
+if pkg-config --exists libxml-2.0 ; then
+	echo "yes"
+pkg_modules="$pkg_modules libxml-2.0"
+else
+	echo "no"
+	AC_MSG_ERROR(libxml-2.0 not found please install the libxml2 development package)
+fi
+
+echo -n "checking for gmodule-2.0 ... "
+if pkg-config --exists gmodule-2.0 ; then
+	echo "yes"
+pkg_modules="$pkg_modules gmodule-2.0"
+else
+	echo "no"
+	AC_MSG_ERROR(gmodule-2.0 not found please install the glib development package)
+fi
+
+dnl Check for terminal
+dnl ==================
+AC_ARG_WITH(terminal,
+	[  --with-terminal         adds a terminal window (experimental)],
+	[use_terminal=$withval],
+	[use_terminal=no])
+
+AC_MSG_CHECKING(if will build with terminal)
+if test "$use_terminal" = yes; then
+	if pkg-config --exists vte ; then
+		echo "yes"
+		pkg_modules="$pkg_modules vte"
+	else
+		echo "no"
+		AC_MSG_ERROR(vte library development package not found, please install it)
+	fi
+else
+	echo "no"
+fi
+
+dnl Check for ipc
+dnl =============
+AC_ARG_WITH(ipc-queue,
+	[  --with-ipc-queue        adds and ipc queue to listen for signals and open all cssed documents in the same window (experimental)],
+	[use_ipc=$withval],
+	[use_ipc=no])
+		
+AC_MSG_CHECKING(if will build ipc queue)
+if test "$use_ipc" = yes; then
+		echo "yes"
+		AC_CHECK_HEADERS(sys/ipc.h sys/msg.h signal.h limits.h ,,
+			AC_MSG_ERROR(Header for ipc not found, avoid --with-ipc-queue)
+		)
+else
+        echo "no"
+fi
+
+dnl With help menus
+dnl ==================
+AC_ARG_WITH(help-menus,
+	[  --with-help-menus       adds the help menus],
+	[use_helpmenus=$withval],
+	[use_helpmenus=no])
+
+AC_MSG_CHECKING(if will build help menus)
+if test "$use_helpmenus" = yes; then
+		echo "yes"
+		AC_CHECK_HEADERS(stdlib.h,,
+			AC_MSG_ERROR(Header for help menus not found, avoid --with-help-menus)
+		)
+else
+        echo "no"
+fi
+
+dnl With plugin headers
+dnl This is needed for the RPM to split 
+dnl the sources in application and devel packages
+dnl =============================================
+AC_ARG_WITH(plugin-headers,
+	[  --with-plugin-headers   install the plugin development files in the system],
+	[install_headers=$withval],
+	[install_headers=no])
+AC_MSG_CHECKING(if will install development headers)
+if test "$install_headers" = yes; then
+		echo "yes"
+else
+        echo "no"
+fi
+AM_CONDITIONAL(INSTALLHEADERS, test "$install_headers" = yes)
+
+
+dnl Check for freedesktop utils
+dnl ===========================
+AC_ARG_WITH(freedesktop-support,
+	[  --with-freedesktop-support    support for freedesktop utils, as desktop icons and mime database],
+	[use_freedesktop=$withval],
+	[use_freedesktop=no])
+
+AC_MSG_CHECKING(if will install freedesktop files)
+if test "$use_freedesktop" = yes; then
+	echo "yes"
+	AC_PATH_PROG(DESKTOP_FILE_INSTALL, desktop-file-install, "no")
+	if test "$DESKTOP_FILE_INSTALL" = no ; then
+		AC_MSG_ERROR(desktop-file-install not found you need desktop-file-utils from freedesktop.org alternatively don't use --with-freedesktop-support)
+	fi
+	AC_PATH_PROG(UPDATE_MIME_DATABASE, update-mime-database, "no")
+	if test "$UPDATE_MIME_DATABASE" = no ; then
+		AC_MSG_ERROR(update-mime-database not found you need shared-mime-info from freedesktop.org alternatively don't use --with-freedesktop-support)
+	fi
+else
+	echo "no"
+fi
+AM_CONDITIONAL(FREEDESKTOP_SUPPORT, test "$use_freedesktop" = yes)
+
+dnl Check if mime and desktop databases should be updated
+dnl =====================================================
+AC_ARG_ENABLE([update-databases],
+	AC_HELP_STRING([--disable-update-databases],[do not run the update-desktop-database or update-mime-database utilities, mostly useful for package maintainers]),[
+	UPDATEDATABASES=$enableval
+	],[
+	UPDATEDATABASES=yes]
+)
+AM_CONDITIONAL(UPDATE_DATABASES, test "$UPDATEDATABASES" = yes)
+
+dnl Check for splitter windows
+dnl =========================
+AC_ARG_WITH(spiltter-windows,
+        [  --with-spiltter-windows          allows two views in each document (experimental)],
+        [use_splitter_windows=$withval],
+        [use_splitter_windows=no])
+
+AC_MSG_CHECKING(if will allow splitter windows)
+if test "$use_splitter_windows" = yes; then
+        echo "yes"
+else
+        echo "no"
+fi
+
+dnl ************************
+dnl Checks for needed funcs.
+dnl ************************
+AC_FUNC_ERROR_AT_LINE
+AC_FUNC_MEMCMP
+AC_FUNC_MMAP
+AC_FUNC_STAT
+AC_FUNC_VPRINTF
+AC_CHECK_FUNCS(isascii mblen memmove memset munmap strchr strstr mkdir strtol)
+
+dnl ************************
+dnl Checks for header files.
+dnl ************************
+AC_HEADER_STDC
+AC_CHECK_HEADERS(unistd.h string.h ctype.h stdio.h sys/mman.h sys/types.h sys/stat.h fcntl.h libgen.h libintl.h stddef.h)
+PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
+AC_SUBST(PACKAGE_CFLAGS)
+AC_SUBST(PACKAGE_LIBS)
+
+dnl ADD USER CONFIGURATION TO CFLAGS
+
+dnl Add terminal to CFLAGS if requested.
+dnl If it's requested but vte is not found
+dnl it will not reach here.
+dnl ====================================
+if test "$use_terminal" = yes; then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DWITH_TERMINAL"
+fi 
+
+dnl Add ipc queue to CFLAGS if requested.
+dnl If it's requested but headers are not found
+dnl it will not reach here.
+dnl ====================================
+if test "$use_ipc" = yes; then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DWITH_IPC_QUEUE"
+fi 
+
+dnl Define WITH_HELP_MENUS at CFLAGS if requested.
+dnl If it's requested but headers are not found
+dnl it will not reach here.
+dnl ====================================
+if test "$use_helpmenus" = yes; then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DWITH_HELP_MENUS"
+fi 
+
+dnl Add splitter windows to CFLAGS if requested.
+dnl ====================================
+if test "$use_splitter_windows" = yes; then
+        PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DWITH_SPLITTER_WINDOW"
+fi
+
+
+dnl Define DARWIN at CFLAGS if it's OsX
+dnl ====================================
+if test "x$OSTYPE" = "xDARWIN";then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DDARWIN"
+fi
+
+dnl Check if gtk2 >=  2.2
+dnl ====================
+AC_MSG_CHECKING(if gtk+2 is at least 2.2)
+if pkg-config gtk+-2.0 --atleast-version=2.2;
+then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DGTK_IS_2_2"
+	echo "yes"
+else
+	echo "no"
+fi
+
+dnl Check if  gtk2 >=  2.4
+dnl ====================
+AC_MSG_CHECKING(if gtk+2 is at least 2.4)
+if pkg-config gtk+-2.0 --atleast-version=2.4;
+then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DGTK_ATLEAST_2_4"
+	echo "yes"
+else
+	echo "no"
+fi
+
+dnl Check if  gtk2 >=  2.6
+dnl ====================
+AC_MSG_CHECKING(if gtk+2 is at least 2.6)
+if pkg-config gtk+-2.0 --atleast-version=2.6;
+then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DGTK_ATLEAST_2_6"
+	echo "yes"
+else
+	echo "no"
+fi
+
+dnl ***************************************************************************
+dnl Check for marshal and enum generators
+dnl ***************************************************************************
+GLIB_GENMARSHAL="`pkg-config --variable=glib_genmarshal glib-2.0`"
+AC_SUBST(GLIB_GENMARSHAL)
+GLIB_MKENUMS="`pkg-config --variable=glib_mkenums glib-2.0`"
+AC_SUBST(GLIB_MKENUMS)
+
+dnl Debugging
+AC_ARG_WITH(debugging-output,
+	[  --with-debugging-output turns debugging output on],
+	[use_debug_output=$withval],
+	[use_debug_output=no])
+
+AC_MSG_CHECKING(if will build with debugging output)
+if test "x$use_debug_output" = "xyes"; then
+		echo "yes"
+		PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DDEBUG_OUTPUT"
+else
+        echo "no"
+fi
+
+AC_ARG_WITH(debug,
+	[  --with-debug            turns debug on],
+	[use_debug=$withval],
+	[use_debug=no])
+
+AC_MSG_CHECKING(if will build with debug information)
+if test "x$use_debug" = "xyes"; then
+	echo "yes"
+else
+        echo "no"
+fi
+AM_CONDITIONAL(DEBUG, test "$use_debug" = yes)
+
+GETTEXT_PACKAGE=cssed
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
+
+AC_OUTPUT([
+Makefile
+cssed.pc
+scintilla/Makefile
+scintilla/gtk/Makefile
+libcroco/parser/Makefile
+libcroco/Makefile
+pixmaps/Makefile
+freedesktop/cssed.applications
+freedesktop/cssed.desktop
+src/Makefile
+po/Makefile.in
+])
+
+echo "----------------------------------------"
+echo "Configuration is done OK."
+echo "Now type 'make' to build cssed"
+echo "Then type 'make install' to install it"
+echo ""
+echo "Configure settings: "
+echo -n "- Built-in terminal: "
+echo $use_terminal 
+echo -n "- IPC queue support: "
+echo $use_ipc
+echo -n "- GTK version: "
+echo `pkg-config --modversion gtk+-2.0`
+echo -n "- Debug output: "
+echo $use_debug_output 
+echo -n "- Debuging information: "
+echo $use_debug
+echo -n "- Install plugin headers (development): "
+echo $install_headers
+echo -n "- Install freedesktop files (desktop icon): "
+echo $use_freedesktop
+echo -n "- Update freedesktop databases (desktop file): "
+echo $UPDATEDATABASES
+echo -n "- Allow windows to split: "
+echo $use_splitter_windows
+echo ""
+
+echo "cssed (c) Iago Rubio, 2004-2006"
+echo "----------------------------------------"
+echo "You can get the last cssed version at"
+echo "http://cssed.sourceforge.net"
+echo "---------------------------------------"

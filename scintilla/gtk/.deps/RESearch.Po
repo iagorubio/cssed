@@ -1,0 +1,8 @@
+RESearch.o: ../src/RESearch.cxx /usr/include/stdc-predef.h \
+ ../src/CharClassify.h ../src/RESearch.h
+
+/usr/include/stdc-predef.h:
+
+../src/CharClassify.h:
+
+../src/RESearch.h:

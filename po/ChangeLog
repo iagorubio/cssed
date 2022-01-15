@@ -1,0 +1,110 @@
+2005-12-22  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/fr.po, po/cssed.pot:
+	
+	Updated according to changes in the whole tree
+	Translated fr, others are neither updated nor translated.
+
+2005-03-01  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/de.po, po/ca.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Updated according to changes in src
+	Translated fr, others are to be translated.
+
+2005-02-18  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/de.po, po/ca.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Updated according to changes in interface.c
+	Translated fr, others are to be translated.
+
+2005-02-17  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/de.po, po/ca.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Updated according to changes in interface.c
+	Translated fr, others are to be translated.
+
+2005-02-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/de.po, po/ca.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Updated according to changes in interface.c
+
+2005-02-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/de.po, po/ca.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Updated all files. Added translator to ca, otherwise all strings are 
+	fuzzy. Translated fr, others are to be translated.
+
+2004-09-27  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/es.po, po/de.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Corrected some strings and misspelling
+	New pot file. Updated fr.po, es.po, gl.po, de.po, it.po
+
+2004-09-20  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/es.po, po/de.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Translation help menus in French
+	New pot file. Updated fr.po, es.po, gl.po, de.po, it.po
+
+2004-09-13  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/es.po, po/de.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Corrected wrong English string for color-border-right
+	Corrected wrong translation for empty search field in Spanish.
+	New pot file. Updated fr.po, es.po
+
+2004-09-11  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* po/es.po, po/de.po, po/fr.po, po/gl.po, po/it.po, po/cssed.pot:
+	
+	Corrected misspelling in English strings, minor changes to it, gl, de.
+	New pot file. Updated fr.po
+
+2004-09-10  Iago Rubio <iagorubio@users.sourceforge.net>
+
+	* po/Makefile.in.in:
+	Small changes to tell xgettext there're some UTF-8 characters in 
+	source files.
+	
+
+
+2004-09-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* po/fr.po
+	
+	Corrected unwanted <span> in message when closing
+
+	* po/fr.po
+	
+	Updated translation
+
+	* po/fr.de, po/es.po, po/de.po, po/gl.po, po/it.po
+
+	Update the po files according to changes in /src.
+	
+2004-09-08  Michèle Garoche <michele.garoche@easyconnect.fr>
+	
+	* po/fr.po
+	
+	Updated translation
+
+	* po/fr.de, po/es.po, po/de.po, po/gl.po, po/it.po
+	
+	Changed the headers to reflect the language, the package and its
+	version.
+	Update the po files according to changes in /src.
+	To be checked by the translators
+	
+	* po/ChangeLog
+	
+	Added a ChangeLog to track the changes in src directory
+	
+
